@@ -1,0 +1,229 @@
+.navigation_popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow-y: scroll;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    z-index: 5;
+    @media(min-width: 768px) {
+        display: none !important;
+    }
+}
+
+.navigation_header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    min-height: 75px;
+    padding: 10px;
+
+    .search_block {
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        margin: 0;
+
+        input {
+            border: 1px solid rgb(223, 223, 223);
+            border-right: 0;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+            height: 40px;
+            width: 100%;
+        }
+
+        button {
+            align-items: center;
+            border: 1px solid rgb(223, 223, 223);
+            border-left: 0;
+            border-bottom-left-radius: 0;
+            border-top-left-radius: 0;
+            color: rgb(223, 223, 223);
+            cursor: pointer;
+            display: flex;
+            height: 40px;
+            justify-content: center;
+            padding: 0;
+            width: 40px;
+
+            i {
+                background-image: url("https://nrcerm.ru/templates/nrcerm/dist/img/svg/search.svg");
+                background-repeat: no-repeat;
+                background-position: 50% 50%;
+                content: '';
+                height: 16px;
+                transform: none;
+                width: 16px;
+
+                &::before {
+                    display: none;
+                }
+            }
+        }
+
+        .search {
+            background-image: none;
+            width: 200px;
+        }
+    }
+
+    .close {
+        align-items: center;
+        cursor: pointer;
+        display: flex;
+        height: 40px;
+        justify-content: center;
+        width: 40px;
+    }
+}
+
+.navigation_popup_menu {
+    li {
+        position: relative;
+
+        &.expanded {
+            div {
+                transform: rotate(270deg);
+            }
+
+            ul {
+                display: block;
+            }
+        }
+
+        & > a {
+            border-top: 1px solid rgb(217, 217, 217);
+            color: rgb(24, 83, 148);
+            display: block;
+            font-size: 14px;
+            font-family: "helveticaneuecyrroman";
+            font-weight: 500;
+            padding: 17px 0 17px 16px;
+        }
+
+        div {
+            align-items: center;
+            cursor: pointer;
+            display: flex;
+            height: 40px;
+            justify-content: center;
+            right: 9px;
+            position: absolute;
+            top: 5px;
+            transform: rotate(90deg);
+            transition: all ease 0.2s;
+            width: 40px;
+
+            &::after {
+                background-image: url("https://nrcerm.ru/templates/nrcerm/dist/img/svg/small_right_arrow.svg");
+                background-repeat: no-repeat;
+                background-position: center;
+                content: '';
+                display: block;
+                height: 14px;
+                width: 14px;
+            }
+        }
+
+        ul {
+            border-top: 1px solid rgb(217, 217, 217);
+            display: none;
+        }
+
+        li {
+            background-color: rgb(240, 242, 245);
+            position: relative;
+
+            & > a {
+                border: none;
+                padding: 7px 0 7px 16px;
+
+                &:hover {
+                    color: rgb(247, 115, 16);
+                }
+            }
+
+            &:first-child a {
+                border-top: none;
+                padding: 20px 0 7px 16px;
+            }
+
+            &:last-child a {
+                padding: 7px 0 30px 16px;
+            }
+        }
+    }
+}
+
+.navigation_footer {
+    background-color: rgb(23, 78, 141);
+}
+
+.addit_info {
+    ul {
+        padding-top: 20px;
+
+        li {
+            margin-left: 16px;
+            padding: 16px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.149);
+
+            a {
+                font-size: 14px;
+                color: rgb(255, 255, 255);
+            }
+        }
+    }
+}
+
+.contact_block {
+    color: #fff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+
+    .iconed_text_info {
+        span {
+            color: #fff;
+            display: block;
+            font-size: 0.8em;
+        }
+
+        a {
+            color: #fff;
+            display: block;
+            font-family: "museo_sans_cyrl500";
+            font-size: 1.2em;
+            margin: 0.4em 0 0;
+            transition: all ease 0.2s;
+        }
+    }
+}
+
+.contact_block-web {
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+    ul {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        margin: 0 !important;
+    }
+
+    li {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    a {
+        align-items: center;
+        display: flex;
+        height: 32px;
+        justify-content: center;
+        width: 32px;
+    }
+}

@@ -1,0 +1,285 @@
+.button,
+button,
+input[type=button],
+input[type=reset],
+input[type=submit] {
+    font-family: "helveticaneuecyrroman";
+    border: 1px solid #edeff2;
+    border-radius: 3px;
+    width: auto;
+    padding: 0 3em;
+    height: 51px;
+    color: #185394;
+    background-color: #fff;
+    font-size: 0.9em;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+    box-sizing: border-box;
+    box-shadow: 0;
+    transition: all ease 0.2s;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button:hover,
+button:hover,
+input[type=button]:hover,
+input[type=reset]:hover,
+input[type=submit]:hover {
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .03);
+}
+
+.button.bluebutton,
+button.bluebutton,
+input[type=button].bluebutton,
+input[type=reset].bluebutton,
+input[type=submit].bluebutton {
+    background-color: #185394;
+    border: 1px solid #185394;
+    box-shadow: 1px 2px 5px 0 rgba(24, 83, 148, .14);
+    color: #fff;
+}
+
+.button.bluebutton:hover,
+button.bluebutton:hover,
+input[type=button].bluebutton:hover,
+input[type=reset].bluebutton:hover,
+input[type=submit].bluebutton:hover {
+    background-color: #2c7fda;
+    border: 1px solid #2c7fda;
+}
+
+.button.orangebutton,
+button.orangebutton,
+input[type=button].orangebutton,
+input[type=reset].orangebutton,
+input[type=submit].orangebutton {
+    background-color: #fd7100;
+    border: 1px solid #fd7100;
+    box-shadow: 1px 2px 5px 0 rgba(24, 83, 148, .14);
+    color: #fff;
+}
+
+.button.orangebutton:hover,
+button.orangebutton:hover,
+input[type=button].orangebutton:hover,
+input[type=reset].orangebutton:hover,
+input[type=submit].orangebutton:hover {
+    background-color: #f88936;
+    border: 1px solid #f88936;
+}
+
+.button.arrowedbutton,
+button.arrowedbutton,
+input[type=button].arrowedbutton,
+input[type=reset].arrowedbutton,
+input[type=submit].arrowedbutton {
+    //background-image: url("../img/svg/arrowedbutton.svg");
+    background-image: url("https://nrcerm.ru/templates/nrcerm/dist/img/svg/arrowedbutton.svg");
+    background-repeat: no-repeat;
+    background-position: 80% 52%;
+    padding-right: 4.5em;
+}
+
+legend {
+    text-transform: uppercase;
+}
+
+fieldset,
+legend {
+    margin: 1em 0;
+}
+
+form,
+label {
+    display: block;
+}
+
+label {
+    font-size: 0.9em;
+    margin: 0.5em 0;
+}
+
+label.error {
+    color: red;
+}
+
+input[type=date],
+input[type=email],
+input[type=number],
+input[type=text],
+textarea {
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+    background-color: #fff;
+}
+
+textarea {
+    font-size: 0.9em;
+    border-color: #d1dae4;
+    padding: 1em;
+}
+
+.selectwrap:hover,
+textarea:hover {
+    box-shadow: 0 1px 4px 0 rgba(44, 127, 218, .23);
+}
+
+input[type=date],
+input[type=email],
+input[type=number],
+input[type=text] {
+    border-color: #d9d9d9;
+    height: 36px;
+    padding: 0 1em;
+}
+
+input[type=date].error,
+input[type=email].error,
+input[type=number].error,
+input[type=text].error {
+    border-color: red;
+}
+
+.selectwrap,
+form,
+input[type=date],
+input[type=email],
+input[type=number],
+input[type=text],
+textarea {
+    box-sizing: border-box;
+}
+
+form {
+    margin: 3em 0;
+}
+
+.selectwrap,
+.selectwrap select {
+    position: relative;
+    cursor: pointer;
+}
+
+.selectwrap {
+    overflow: hidden;
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #d1dae4;
+    transition: all ease 0.2s;
+    height: 48px;
+    padding: 0;
+}
+
+.selectwrap:after {
+    content: '';
+    width: 40px;
+    height: 31px;
+    position: absolute;
+    top: 15%;
+    right: 0;
+    //background: url("../img/svg/select_arr.svg") no-repeat center center;
+    background: url("https://nrcerm.ru/templates/nrcerm/dist/img/svg/select_arr.svg") no-repeat center center;
+    z-index: 1;
+    border-left: 1px solid rgba(0, 0, 0, .1);
+    background-color: #fff;
+}
+
+.selectwrap select {
+    outline: none;
+    background: 0 0;
+    border: none;
+    width: 110%;
+    height: 100%;
+    padding: 0 5em 0 1em;
+    z-index: 2;
+    color: #185394;
+    font-weight: 700;
+}
+
+input[type=checkbox],
+input[type=radio] {
+    position: absolute;
+    z-index: -1000;
+    left: -1000px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+}
+
+input[type=checkbox]:checked+label,
+input[type=checkbox]:checked+label:hover {
+    //background-image: url("../img/sprite.png");
+    background-image: url("https://nrcerm.ru/templates/nrcerm/dist/img/sprite.png");
+    background-position: 0 -137px;
+    height: 18px;
+    width: auto;
+}
+
+input[type=checkbox]:checked+label:hover {
+    background-position: 0 -65px;
+}
+
+input[type=checkbox]+label,
+input[type=radio]+label {
+    padding-left: 30px;
+    display: inline-block;
+    line-height: 18px;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    cursor: pointer;
+    //background-image: url("../img/sprite.png");
+    background-image: url("https://nrcerm.ru/templates/nrcerm/dist/img/sprite.png");
+    background-position: 0 -47px;
+    height: 18px;
+    width: auto;
+    user-select: none;
+    margin-bottom: 20px;
+}
+
+input[type=checkbox]+label.chk,
+input[type=checkbox]+label:hover {
+    //background-image: url("../img/sprite.png");
+    background-image: url("https://nrcerm.ru/templates/nrcerm/dist/img/sprite.png");
+    background-position: 0 -83px;
+    height: 18px;
+    width: auto;
+}
+
+input[type=checkbox]+label.chk {
+    background-position: 0 -137px;
+}
+
+input[type=radio]:checked+label,
+input[type=radio]:checked+label:hover {
+    //background-image: url("../img/sprite.png");
+    background-image: url("https://nrcerm.ru/templates/nrcerm/dist/img/sprite.png");
+    background-position: 0 -101px;
+    height: 18px;
+    width: auto;
+}
+
+input[type=radio]:checked+label:hover {
+    background-position: 0 -119px;
+}
+
+input[type=radio]+label.chk,
+input[type=radio]+label:hover {
+    //background-image: url("../img/sprite.png");
+    background-image: url("https://nrcerm.ru/templates/nrcerm/dist/img/sprite.png");
+    background-position: 0 -83px;
+    height: 18px;
+    width: auto;
+}
+
+input[type=radio]+label.chk {
+    background-position: 0 -137px;
+}

@@ -1,0 +1,39 @@
+#home_mob_banner {
+    height: 500px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    background: #666;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    word-break: break-word;
+    text-align: center;
+    text-shadow: 0 0 3px #000;
+    //background-image: url("/files/covid.jpeg");
+    background-image: url("/files/covid.jpeg");
+    background-position: 80% 50%;
+    background-size: cover;
+    margin-left: -15px;
+    margin-right: -15px;
+    @media(min-width: 768px) {
+        display: none;
+    }
+}
+
+#home_mob_banner h2 {
+    color: #fff;
+    margin: 0 0 40px;
+    font-size: 32px;
+    line-height: 1;
+}
+
+#home_mob_banner p {
+    font-size: 24px;
+    line-height: 1.3;
+}
+
+#home_mob_banner .button.arrowedbutton {
+    margin-bottom: 20px;
+}
