@@ -1,0 +1,120 @@
+.tabz > ul li.r-tabs-state-active a {
+    color: #fd7100;
+}
+
+.tabz {
+    margin: 2em 0;
+
+    .tabz-header {
+        border-top: 1px solid rgb(217, 217, 217);
+        border-bottom: 1px solid rgb(217, 217, 217);
+        overflow-x: auto;
+        overflow-y: hidden;
+        -ms-overflow-style: none;
+        overflow: -moz-scrollbars-none;
+        width: 99.5%;
+
+        &::-webkit-scrollbar {
+            width: 0;
+        }
+
+        ul {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-around;
+            align-items: flex-start;
+            align-content: space-around;
+            margin: 0;
+            width: 100%;
+
+            li {
+                display: inline-flex;
+                flex-flow: row nowrap;
+                justify-content: space-around;
+                align-items: flex-start;
+                align-content: space-around;
+                font-size: 0.9em;
+                font-weight: 700;
+                font-size: 14px;
+                margin: 0;
+                padding: 0 5px;
+                text-align: center;
+
+                &::before {
+                    display: none;
+                }
+            }
+
+            a {
+                border-bottom: 2px solid transparent;
+                display: block;
+                padding-top: 12px;
+                padding-bottom: 12px;
+
+                &.active {
+                    border-bottom-color: rgb(247, 115, 16);
+                    color: #fd7100;
+                }
+            }
+        }
+    }
+
+    & > ul {
+        align-items: center;
+        display: flex;
+        border-bottom: 1px solid #dee2e7;
+        border-top: 1px solid #dee2e7;
+        height: 3.438em;
+        justify-content: space-between;
+
+        li {
+            position: relative;
+            height: 100%;
+
+            &.r-tabs-state-active {
+                &::after {
+                    bottom: 0;
+                    opacity: 1;
+                }
+            }
+
+            &:after {
+                content: '';
+                background-color: #fd7100;
+                width: 100%;
+                height: 3px;
+                display: inline-block;
+                position: absolute;
+                left: 0;
+                bottom: 25%;
+                opacity: 0;
+                transition: all ease 0.2s;
+            }
+
+            a {
+                align-items: center;
+                display: inline-flex;
+                height: 100%;
+                justify-content: space-between;
+                font-size: 0.9em;
+                font-weight: 700;
+            }
+        }
+    }
+
+    .tab_content {
+        display: none;
+
+        &.active {
+            display: block;
+        }
+    }
+}
+
+.visit_submit + .tabz {
+    margin-top: 0;
+}
+
+.visit_submit + .tabz .tabz-header {
+    border-top: none;
+}

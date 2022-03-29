@@ -1,0 +1,59 @@
+#departments {
+    h1 {
+        margin: 15px 0;
+    }
+
+    h2 {
+        cursor: pointer;
+        margin: 0;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-right: 30px;
+        position: relative;
+
+        &::after {
+            content: '';
+            background-image: url("https://nrcerm.ru/templates/nrcerm/dist/img/svg/small_right_arrow.svg");
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            height: 14px;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%) rotate(90deg);
+            transition: all ease 0.2s;
+            width: 14px;
+        }
+
+        &.is-active {
+            &::after {
+                transform: translateY(-50%) rotate(-90deg);
+            }
+        }
+    }
+
+    .department {
+        border-bottom: 1px solid #e5e5e5;
+
+        & > ul {
+            display: none;
+            margin: 0;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            @media(min-width: 768px) {
+                columns: 2;
+            }
+            @media(min-width: 1024px) {
+                columns: 3;
+            }
+
+            & > li {
+                margin: 0 0 20px;
+
+                &:before {
+                    background-color: #e97d26;
+                }
+            }
+        }
+    }
+}

@@ -394,7 +394,8 @@ function changeBlind(isBlind) {
     if (screen.width > 768 && $(window).width() > 768) {
         $('.flex_blocks').masonry({
             itemSelector: '.flex_blocks_item',
-            columnWidth: 16
+            columnWidth: 290,
+            gutter: 10
         });
     }
     $('.aside_secondary_menu').children('li').children('div').click(function() {

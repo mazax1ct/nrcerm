@@ -1,0 +1,195 @@
+.secondary_content {
+    padding-left: 0;
+    padding-right: 0;
+    @media(min-width: 1024px) {
+        display: flex;
+    }
+
+    .aside_opener {
+        border: none;
+        width: 100%;
+        @media(min-width: 1024px) {
+            display: none;
+        }
+    }
+
+    .aside_secondary {
+        background-color: #fff;
+        bottom: 0;
+        display: none;
+        left: 0;
+        overflow-y: auto;
+        padding: 15px;
+        position: fixed;
+        right: 0;
+        top: 0;
+        z-index: 9999;
+        @media(min-width:1024px) {
+            bottom: auto;
+            display: block;
+            left: auto;
+            overflow: visible;
+            position: static;
+            padding: 20px 0 0;
+            min-width: 18.125em;
+            top: auto;
+            width: 18.125em;
+            z-index: auto;
+        }
+
+        hr {
+            display: none;
+        }
+
+        &.is-open {
+            display: block;
+        }
+    }
+
+    .aside_secondary_h_block {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 15px;
+        @media(min-width: 1024px) {
+            margin-bottom: 0;
+        }
+    }
+
+    .aside_secondary_h {
+        font-size: 1.5em;
+        font-family: "museo_sans_cyrl500";
+        margin: 0;
+        @media(min-width: 1024px) {
+            align-items: center;
+            background-color: #185394;
+            color: #fff;
+            display: flex;
+            height: 2.55em;
+            padding-left: 15px;
+            padding-right: 15px;
+            width: 100%;
+        }
+    }
+
+    & > section {
+        flex-grow: 1;
+        @media(min-width: 1024px) {
+            padding-left: 30px;
+        }
+    }
+}
+
+.aside_secondary_menu {
+    margin-bottom: 15px;
+
+    & > li {
+        transition: all ease 0.2s;
+        background-color: transparent;
+        border-bottom: 1px solid #edeff2;
+        position: relative;
+
+        & > ul {
+            overflow: hidden;
+            max-height: 0;
+            transition: max-height 0.2s ease-in-out;
+
+            li {
+                font-size: 0.9em;
+
+                a {
+                    display: flex;
+                    align-items: center;
+                    overflow: hidden;
+                    padding: 0.5em 1.5em;
+                }
+            }
+        }
+
+        div {
+            content: '';
+            //background-image: url("../img/svg/small_right_arrow.svg");
+            background-image: url("https://nrcerm.ru/templates/nrcerm/dist/img/svg/small_right_arrow.svg");
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            height: 46px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            transform: rotate(0deg);
+            transition: all ease 0.2s;
+            background-position: center;
+            cursor: pointer;
+            width: 40px;
+            z-index: 1;
+
+            &:last-child {
+                //display: none;
+            }
+        }
+
+        a {
+            align-items: center;
+            display: flex;
+            color: #185394;
+            min-height: 46px;
+            padding: 0.5em;
+        }
+
+        &:hover {
+            background-color: #edeff2;
+        }
+
+        &.expanded {
+            background-color: #edeff2;
+
+            div {
+                transform: rotate(90deg);
+            }
+
+            & > ul {
+                background-color: #fff;
+                max-height: 1000px;
+                transition: max-height 0.2s ease-in-out;
+
+                li {
+                    a {
+                        &:hover {
+                            color: #fd7100;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.aside_secondary_closer {
+    background-color: transparent;
+    border: none;
+    height: 40px;
+    padding: 0;
+    width: 40px;
+    @media(min-width: 1024px) {
+        display: none;
+    }
+
+    span {
+        background-color: #185394;
+        height: 4px;
+        position: relative;
+        transform: rotate(45deg);
+        width: 40px;
+
+        &::after {
+            background-color: #185394;
+            content: '';
+            height: 4px;
+            left: 2px;
+            position: absolute;
+            transform: rotate(90deg) translateY(50%);
+            top: 0;
+            width: 40px;
+        }
+    }
+}

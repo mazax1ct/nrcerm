@@ -22,6 +22,10 @@ html {
     overflow-x: hidden;
 }
 
+body {
+    word-break: break-word;
+}
+
 .content_width {
     max-width: 1230px;
     margin: 0 auto;
@@ -65,14 +69,24 @@ h6 {
 h1 {
     font-family: "museo_sans_cyrl500";
     font-size: 1.75em;
+    margin: 0.5em 0;
     @media(min-width: 768px) {
+        font-size: 2em;
+    }
+    @media(min-width: 1024px) {
         font-size: 2.75em;
     }
 }
 
 h2 {
-    font-size: 2.1em;
+    font-size: 1.5em;
     font-family: "museo_sans_cyrl500";
+    @media(min-width: 768px) {
+        font-size: 1.75em;
+    }
+    @media(min-width: 1024px) {
+        font-size: 2em;
+    }
 }
 
 h3 {
@@ -94,8 +108,8 @@ h6 {
 
 hr {
     border: none;
-    border-bottom: 1px solid #ccc;
-    margin: 1em 0 1.5em;
+    border-bottom: 1px solid #dee2e7;
+    margin: 1.5em 0;
 }
 
 a {
@@ -124,4 +138,9 @@ strong {
     display: block;
     height: 0;
     visibility: hidden;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
 }

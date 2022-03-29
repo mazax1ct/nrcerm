@@ -1,6 +1,7 @@
 .header_slider {
     background-repeat: no-repeat;
     background-size: 100%;
+    min-height: 60px;
     position: relative;
     @media screen and (max-width: 767px) {
         background-repeat: unset;

@@ -1,0 +1,63 @@
+#home_about {
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    .about_text {
+        max-width: 800px;
+        padding-bottom: 30px;
+        @media(min-width: 768px) {
+            padding-right: 15px;
+            padding-bottom: 0;
+            width: calc(100% - 375px);
+        }
+
+        h2 {
+            margin-top: 0;
+            margin-bottom: 0.75em;
+        }
+
+        ul {
+            padding: 0 0 20px;
+
+            li {
+                line-height: 1.3;
+                padding: 5px 0;
+
+                &::before {
+                    content: '';
+                    display: inline-block;
+                    vertical-align: top;
+                    width: 5px;
+                    height: 5px;
+                    background: #fd7100;
+                    margin: 5px 15px 0 5px;
+                }
+            }
+        }
+
+        p {
+            line-height: 1.3;
+        }
+    }
+
+    .about_photo {
+        max-width: 375px;
+        width: 100%;
+    }
+
+    .about_btn {
+        padding: 45px 0 0;
+        text-align: center;
+    }
+
+    .clr {
+        @media(min-width: 768px) {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &::after {
+            display: none;
+        }
+    }
+}

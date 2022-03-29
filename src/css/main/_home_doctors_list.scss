@@ -1,0 +1,62 @@
+#home_doctors_list {
+    margin: 0 0 20px;
+
+    h2 {
+        text-align: center;
+    }
+
+    .doctors_list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        a {
+            max-width: 290px;
+            border: 1px solid #d9d9d9;
+            margin-bottom: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            overflow: hidden;
+            text-align: center;
+            @media(min-width: 768px) {
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+            @media(min-width: 1024px) {
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+            @media(min-width: 1200px) {
+                margin-left: 5px;
+                margin-right: 5px;
+            }
+
+            &:hover img {
+                img {
+                    opacity: 0.5;
+                }
+            }
+
+            img {
+                transition: opacity 0.3s;
+            }
+
+            span {
+                display: block;
+                padding: 15px 20px;
+                font-size: 13px;
+
+                b {
+                    display: block;
+                    margin: 0 0 15px;
+                    font-size: 16px;
+                    line-height: 1.25;
+                }
+            }
+        }
+    }
+
+    .doctors_btn {
+        text-align: center;
+    }
+}

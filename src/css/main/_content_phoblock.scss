@@ -1,0 +1,38 @@
+.content_phoblock {
+    padding-top: 1em;
+    @media(min-width: 768px) {
+        display: flex;
+    }
+
+    &:not(:last-child) {
+        margin-bottom: 60px;
+    }
+}
+
+.content_phoblock_photo {
+    @media(min-width: 768px) {
+        min-width: 200px;
+        width: 200px;
+    }
+
+    span {
+        font-family: "helveticaneuecyrroman";
+        color: #697991;
+        font-size: 0.8em;
+        font-style: italic;
+        line-height: 1.5em;
+        display: inline-block;
+        padding: 1.5em 0 0;
+    }
+}
+
+.content_phoblock_content {
+    @media(min-width: 768px) {
+        flex-grow: 1;
+        padding-left: 30px;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+}
