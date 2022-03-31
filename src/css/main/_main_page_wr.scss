@@ -1,0 +1,29 @@
+.main_page_wr {
+    @media(min-width: 1024px) {
+        display: flex;
+    }
+
+    section {
+        flex-grow: 1;
+
+        .button {
+            width: 100%;
+            @media(min-width: 1024px) {
+                width: calc(100% - 20px);
+            }
+        }
+    }
+
+    .flex_blocks {
+        @media(min-width: 1024px) {
+            padding-right: 20px;
+        }
+    }
+}
+
+aside.aside_mainpage {
+    @media(min-width: 1024px) {
+        margin-top: 60px;
+        width: 18.125em;
+    }
+}

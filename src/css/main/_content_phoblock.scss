@@ -5,12 +5,14 @@
     }
 
     &:not(:last-child) {
-        margin-bottom: 60px;
+        margin-bottom: 40px;
     }
 }
 
 .content_phoblock_photo {
+    margin-bottom: 20px;
     @media(min-width: 768px) {
+        margin-bottom: 0;
         min-width: 200px;
         width: 200px;
     }
@@ -24,12 +26,17 @@
         display: inline-block;
         padding: 1.5em 0 0;
     }
+
+    img {
+        display: block;
+        width: 100%;
+    }
 }
 
 .content_phoblock_content {
     @media(min-width: 768px) {
         flex-grow: 1;
-        padding-left: 30px;
+        padding-left: 20px;
     }
 
     h2 {

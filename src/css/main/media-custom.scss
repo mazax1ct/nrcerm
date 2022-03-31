@@ -4,21 +4,6 @@
         padding-left: 16px;
     }
 
-    .button.arrowedbutton,
-    button.arrowedbutton,
-    input[type=button].arrowedbutton,
-    input[type=reset].arrowedbutton,
-    input[type=submit].arrowedbutton {
-        background-image: url("../img/svg/arrowedbutton.svg");
-        background-repeat: no-repeat;
-        background-position: 50% 50%;
-        border-radius: 50%;
-        width: 50px;
-        height: 50px;
-        padding: 0;
-        margin-bottom: 118px;
-    }
-
     .slider_wr_core_item_left {
         justify-content: flex-start;
         margin: 40px 0 0;
@@ -40,43 +25,6 @@
 
     .slider_wr_core_pagination {
         bottom: 0.9em;
-    }
-
-    .tabz .tabz-header {
-        border-right: 0;
-        border-left: 0;
-        position: relative;
-    }
-
-    .tabz .tabz-header ul {
-        width: 670px;
-    }
-
-    .headered_horizontal {
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: flex-start;
-        align-items: center;
-        align-content: center;
-    }
-
-    .headered_horizontal span {
-        font-size: 1.1em;
-        width: 100%;
-        text-align: center;
-    }
-
-    .headered_horizontal span span {
-        width: 20%;
-        text-align: center;
-    }
-
-    .headered_horizontal_smallspan {
-        display: inline-flex;
-        flex-flow: row nowrap;
-        justify-content: space-around;
-        align-items: center;
-        align-content: space-around;
     }
 
     .certs {
@@ -114,91 +62,7 @@
 
     .be_pacient_online {
         width: 100%;
-        background-image: url("../img/bepatientonline.png") top center no-repeat;
-        background-size: cover;
-    }
-
-    .copy_content {
-        display: block;
-        height: auto;
-        padding-left: 16px;
-    }
-
-    .copy_content span {
-        display: block;
-        padding: 18px 0;
-        width: 70%;
-    }
-
-    .copy_content ul {
-        display: inline-block;
-        width: 70%;
-        margin-bottom: 18px;
-    }
-
-    .copy_content ul li {
-        display: inline-block;
-    }
-    /*Доктор*/
-    header.header_notmain {
-        height: auto;
-        background-image: none;
-    }
-
-    hr {
-        display: none;
-    }
-
-    .be_pacient_online {
-        width: 100%;
         margin-top: 0;
-        margin-bottom: 20px;
-    }
-
-    .content_phoblock_content {
-        width: 75%;
-    }
-
-    .headered_horizontal article {
-        width: 100%;
-    }
-
-    .content_phoblock {
-        display: block;
-    }
-
-    .content_phoblock_photo {
-        padding: 0;
-        width: 100%;
-    }
-
-    .content_phoblock_photo img {
-        display: block;
-        height: auto;
-        width: 100%;
-        /*max-width: 600px;*/
-        margin: 0 auto;
-    }
-
-    .content_phoblock_content.custom {
-        width: 100%;
-        margin: -29px auto 0;
-    }
-
-    .content_phoblock_content .button {
-        width: 100%;
-    }
-
-    .listinfo td {
-        line-height: 1.714;
-    }
-
-    .listinfo td:nth-child(2) {
-        display: block;
-        margin-left: 20px;
-    }
-
-    .tabz {
         margin-bottom: 20px;
     }
 
@@ -219,14 +83,6 @@
 
     .r-tabs-accordion-title a {
         display: none;
-    }
-    /*Отделение*/
-    .visit_submit_phones-elements {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: flex-start;
-        align-items: center;
-        align-content: space-around;
     }
 
     .visit_submit_phones span:first-child {
@@ -264,10 +120,6 @@
     }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
-    section h3 {
-        padding-left: 35px;
-    }
-
     .clearfix:after {
         content: '';
         display: table;
@@ -292,36 +144,6 @@
         padding-bottom: 10px;
     }
 
-    .be_pacient_online {
-        width: 100%;
-        background-image: url("../img/bepatientonline.png") top center no-repeat;
-        background-size: cover;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-    }
-
-    .copy_content {
-        display: block;
-        height: auto;
-        padding: 0 16px;
-    }
-
-    .copy_content span {
-        display: block;
-        padding: 18px 0;
-    }
-
-    .copy_content ul {
-        display: inline-block;
-        width: 70%;
-        margin-bottom: 30px;
-    }
-
-    .copy_content ul li {
-        display: inline-block;
-    }
-    /*Доктор*/
     header.header_notmain {
         height: auto;
         background-image: none;
@@ -331,113 +153,13 @@
         display: none;
     }
 
-    .be_pacient_online {
-        display: flex;
-        width: 100%;
-        margin-top: 0;
-    }
-
-    .content_phoblock {
-        margin: 0 0 4em;
-    }
-
-    .content_phoblock_content {
-        width: 75%;
-    }
-
-    .headered_horizontal article {
-        width: 34em;
-    }
-
-    .tabz {
-        margin-bottom: 10px;
-    }
-
     .content_file {
         display: block;
         margin-bottom: 30px;
-    }
-
-    .swipe_icon {
-        display: none;
     }
 }
 @media screen and (min-width: 992px) and (max-width: 1240px) {
     .slider_wr {
         padding-left: 16px;
     }
-
-    .content_phoblock_photo {
-        padding: 2em 2.57em 0 0;
-        width: 25%;
-        height: auto;
-    }
-
-    .content_phoblock_photo img {
-        width: 100%;
-    }
-
-    .content_phoblock_content {
-        width: 75%;
-    }
-
-    .headered_horizontal span {
-        font-size: 1.2em;
-        line-height: 1.3em;
-        padding: 2em 0 0;
-        width: 7em;
-    }
-
-    .headered_horizontal article {
-        width: 30em;
-    }
-
-    .swipe_icon {
-        display: none;
-    }
-}
-@media screen and (min-width: 1241px) {
-    .swipe_icon {
-        display: none;
-    }
-}
-
-.ekran-small {
-    display: none;
-}
-@media screen and (max-width: 991px) {
-    .ekran-big {
-        display: none;
-    }
-
-    .ekran-small {
-        display: block;
-    }
-}
-
-.vnikuda {
-    position: relative;
-    width: 100%;
-    display: block;
-}
-
-.vnikuda span {
-    position: absolute;
-    display: none;
-    background: rgba(0, 0, 0, .7);
-    color: #fff;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    transition: 0.3s;
-}
-
-.vnikuda:hover span {
-    display: inline-flex;
-    transition: 0.3s;
-    font-size: 32px;
-    align-items: center;
-    justify-content: center;
 }

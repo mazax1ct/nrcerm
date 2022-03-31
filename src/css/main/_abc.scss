@@ -6,8 +6,8 @@
     padding-top: 5px;
     padding-bottom: 5px;
 
-    a[href]:empty {
-        display: none;
+    & + & {
+        margin-top: 1em;
     }
 }
 
@@ -21,12 +21,20 @@
     font-size: 0.9em;
     height: 40px;
     justify-content: center;
+    min-width: 40px;
     text-align: center;
     text-transform: uppercase;
-    width: 40px;
 
     &:first-child {
         text-transform: capitalize;
+    }
+
+    &[data-path="otdelenie"] {
+        margin-right: auto;
+
+        &:last-child {
+            margin-right: 0;
+        }
     }
 }
 
@@ -41,6 +49,7 @@
 
 .abc_block_item_empty {
     color: #cfd5dd;
+    display: none;
 
     &:hover {
         color: #cfd5dd;
@@ -48,19 +57,34 @@
 }
 
 .abc_list {
-    padding: 0 0 1.5em 4em;
-    position: relative;
-    margin: 2em 0;
-    border-bottom: 1px solid #dee2e7;
+    margin-top: 1.5em;
+
+    &:not(:last-child) {
+        border-bottom: 1px solid #dee2e7;
+        margin-bottom: 1.5em;
+    }
+    @media(min-width: 768px) {
+        position: relative;
+        padding: 0 0 1.5em 4em;
+    }
+
+    &[data-title=""] {
+        padding-right: 0;
+        @media(min-width: 768px) {
+            padding-left: 1.5em;
+        }
+    }
 
     &:before {
-        content: attr(data-title);
-        text-transform: uppercase;
-        position: absolute;
-        top: 0;
-        left: 0;
-        color: #edeff2;
-        font-size: 3em;
+        @media(min-width: 768px) {
+            color: #edeff2;
+            content: attr(data-title);
+            font-size: 3em;
+            left: 0;
+            position: absolute;
+            top: 0;
+            text-transform: uppercase;
+        }
     }
 }
 
@@ -69,31 +93,68 @@
 }
 
 .abc_list_item {
-    margin: 0 0 1em;
+    box-sizing: content-box;
+    min-height: 70px;
+    position: relative;
+    @media(min-width: 768px) {
+        min-height: 100px;
+    }
+
+    &:not(:last-child) {
+        border-bottom: 1px solid #edeff2;
+        margin-bottom: 0.75em;
+        padding-bottom: 1em;
+    }
 
     a {
         display: block;
         color: #185394;
-        font-size: 0.9em;
         font-weight: 700;
-        line-height: 20px;
+        line-height: 1.5;
+        margin-bottom: 10px;
     }
 
     span {
         color: #323232;
-        font-size: 0.9em;
-        line-height: 20px;
+        display: block;
+        font-size: 0.8em;
+        line-height: 1.5;
     }
 
     div {
-        float: left;
-        margin: 0 10px 10px;
-        height: 100px;
+        background-color: #edeff2;
+        border-radius: 50%;
+        height: 70px;
+        left: 0;
+        margin-right: 10px;
         overflow: hidden;
-        border-radius: 50px;
+        position: absolute;
+        top: 0;
+        width: 70px;
+        z-index: 1;
+        @media(min-width: 768px) {
+            height: 100px;
+            width: 100px;
+        }
+
+        & + a {
+            padding-left: 80px;
+            @media(min-width: 768px) {
+                padding-left: 110px;
+            }
+        }
     }
 
     p {
-        margin: 5px 0;
+        font-size: 0.8em;
+        margin-top: 0;
+        padding-left: 80px;
+        @media(min-width: 768px) {
+            padding-left: 110px;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 5px;
+        }
     }
 }

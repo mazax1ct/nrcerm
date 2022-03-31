@@ -132,7 +132,7 @@ strong {
     display: none;
 }
 
-.clr:after {
+.clr::after {
     content: '';
     clear: both;
     display: block;
@@ -143,4 +143,18 @@ strong {
 img {
     height: auto;
     max-width: 100%;
+}
+
+.ekran-small {
+    margin-top: 20px;
+    @media(min-width: 992px) {
+        display: none;
+    }
+}
+
+.ekran-big {
+    display: none;
+    @media(min-width: 992px) {
+        display: block;
+    }
 }

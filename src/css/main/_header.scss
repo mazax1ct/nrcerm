@@ -211,7 +211,10 @@ header {
     a.orangebutton {
         border-radius: 0;
         height: 42px;
+        padding: 0;
+        text-align: center;
         width: 140px;
+        white-space: nowrap;
         @media(min-width: 1024px) {
             width: 200px;
         }

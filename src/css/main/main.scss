@@ -1,184 +1,5 @@
-.main_page_wr {
-    @media(min-width: 1024px) {
-        display: flex;
-    }
-
-    section {
-        flex-grow: 1;
-
-        .button {
-            width: 100%;
-            @media(min-width: 1024px) {
-                width: calc(100% - 20px);
-            }
-        }
-    }
-}
-
-aside.aside_mainpage {
-    @media(min-width: 1024px) {
-        margin-top: 60px;
-        width: 18.125em;
-    }
-}
-
-.aside_block {
-    background-color: #edeff2;
-    padding: 1.9em 2.2em;
-    margin: 1em 0;
-}
-
-.aside_block h3 {
-    margin: 0;
-}
-
-.aside_block_item a {
-    display: block;
-    font-family: "helveticaneuecyrroman";
-    margin: 1em 0;
-}
-
-.aside_block_item a:first-child {
-    color: #000;
-    font-size: 0.9em;
-    line-height: 20px;
-    text-decoration: underline;
-}
-
-.aside_block_item a:first-child b {
-    font-weight: 700;
-}
-
-.aside_block_item a:last-child {
-    color: #3694ca;
-    font-size: 0.9em;
-    line-height: 20px;
-    text-decoration: none;
-}
-
-.aside_block_item a:hover {
-    color: #185394;
-}
-
-.aside_block_item span {
-    display: block;
-    margin: 1em 0 0;
-}
-
-.visit_submit {
-    align-items: center;
-    border-bottom: 1px solid #dee2e7;
-    border-top: 1px solid #dee2e7;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding-top: 15px;
-    padding-bottom: 15px;
-
-    span {
-        &:first-child {
-            font-family: "helveticaneuecyrroman";
-            color: #a3adbd;
-            font-size: 0.9em;
-            line-height: 20px;
-            display: block;
-        }
-
-        &:last-child {
-            font-family: "helveticaneuecyrroman";
-            color: #323232;
-            font-size: 0.9em;
-            line-height: 20px;
-        }
-    }
-}
-
-.visit_submit_phones {
-    padding-top: 5px;
-    padding-bottom: 5px;
-
-    span {
-        &:first-child {
-            font-family: "helveticaneuecyrroman";
-            color: #a3adbd;
-            font-size: 0.9em;
-            line-height: 20px;
-            display: block;
-        }
-
-        &:last-child {
-            font-family: "helveticaneuecyrroman";
-            color: #323232;
-            font-size: 0.9em;
-            line-height: 20px;
-        }
-    }
-}
-
-.visit_submit_time {
-    padding-top: 5px;
-    padding-bottom: 5px;
-}
-
-article ol,
-article ul {
-    margin: 2em 0;
-}
-
-.headered_horizontal {
-    justify-content: space-between;
-}
-
-.headered_horizontal {
-    display: flex;
-    align-items: flex-start;
-    border-bottom: 1px solid #cfd5dd;
-}
-
-.headered_horizontal:last-child {
-    border: none;
-}
-
-.headered_horizontal span {
-    font-family: "museo_sans_cyrl500";
-    color: #323232;
-    font-size: 1.2em;
-    line-height: 1.3em;
-    padding: 2em 0 0;
-    width: 9.15em;
-}
-
-.headered_horizontal span span {
-    color: #94a0b2;
-    font-size: 0.8em;
-    display: inline-block;
-    margin: -1em 0 0;
-}
-
-.headered_horizontal span.headered_horizontal_smallspan {
-    font-size: 0.9em;
-    font-weight: 700;
-    line-height: 20px;
-    text-align: left;
-}
-
-.headered_horizontal span.headered_horizontal_bigspan {
-    font-size: 1.2em;
-    line-height: 20px;
-    text-align: left;
-}
-
-.headered_horizontal article {
-    width: 36em;
-    margin-bottom: 10px;
-}
-
-.headered_horizontal article p a {
-    text-decoration: underline;
-}
-
-.headered_horizontal article p a:hover {
-    text-decoration: none;
+.swipe_icon {
+    display: none;
 }
 
 .img_list {
@@ -278,9 +99,29 @@ article ul {
     opacity: 0;
 }
 
+.mfp-auto-cursor .mfp-content {
+    max-width: 600px;
+    background-color: #ffffff;
+    margin-top: 20px;
+    border-radius: 3px;
+}
+
+.mfp-container {
+    @media (max-width: 350px) {
+        width: 280px;
+        height: 0;
+    }
+}
+
 article .read_more:before {
     display: inline-block;
-    background-image: url("../img/svg/small_right_arrow.svg");
+    //background-image: url("../img/svg/small_right_arrow.svg");
+    background-image: url("https://nrcerm.ru/templates/nrcerm/dist/img/svg/small_right_arrow.svg");
+}
+
+article ol,
+article ul {
+    margin: 2em 0;
 }
 
 article ol li,
@@ -338,6 +179,18 @@ article p.caption_p span {
     bottom: -3.6em;
     left: 0;
     overflow: hidden;
+}
+
+article p.spoilerbody {
+    border-bottom: 1px solid #cfd5dd;
+}
+
+article a.open {
+    border-bottom: none;
+}
+
+article a.open:before {
+    transform: rotate(90deg);
 }
 
 article .content_file,
@@ -458,38 +311,36 @@ article ul li:before {
 
 table {
     background-color: #edeff2;
-    width: 100%;
     font-size: 0.9em;
+    width: 100%;
 }
 
 table.listinfo {
     border-bottom: 1px solid #edeff2;
     border-top: 1px solid #edeff2;
-    margin: 2em 0 2.5em;
     background-color: #fff;
-}
-
-table.listinfo tr:first-child td {
-    padding: 2em 0 0;
-}
-
-table.listinfo tr:last-child td {
-    padding: 0 0 2em;
-}
-
-table.listinfo tr td {
-    height: auto;
-    padding: 0.7em 0;
-    border: none;
-}
-
-table.listinfo tr td:first-child {
-    font-weight: 700;
-}
-
-table.listinfo tr td:last-child {
+    margin: 2em 0 2.5em;
     text-align: left;
-    font-size: 1em;
+    word-break: normal;
+
+    &:first-child {
+        margin-top: 0;
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    td {
+        border: none;
+        height: auto;
+        padding: 0.5em;
+        text-align: left;
+
+        &:first-child {
+            font-weight: 700;
+        }
+    }
 }
 
 table tr th {
@@ -544,20 +395,20 @@ table caption {
 .be_pacient_online {
     //background-image: url("../img/bepatientonline.png");
     background-image: url("https://nrcerm.ru/templates/nrcerm/dist/img/bepatientonline.png");
+    background-size: cover;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
-    width: 18.125em;
-    height: 14em;
-}
+    min-height: 14em;
 
-.be_pacient_online .be_pacient_online_h {
-    font-family: "museo_sans_cyrl500";
-    color: #fff;
-    font-size: 1.57em;
-    text-align: center;
-    margin: 0 0 1em;
+    .be_pacient_online_h {
+        font-family: "museo_sans_cyrl500";
+        color: #fff;
+        font-size: 1.57em;
+        text-align: center;
+        margin: 0 0 1em;
+    }
 }
 
 .ui_block {
@@ -565,11 +416,11 @@ table caption {
     padding: 3em;
     height: auto;
     border: 1px solid #ccc;
-}
 
-.ui_block .soc_icons {
-    background-color: #323232;
-    padding: 3em;
+    .soc_icons {
+        background-color: #323232;
+        padding: 3em;
+    }
 }
 
 .certs,
@@ -614,7 +465,6 @@ table caption {
     line-height: 20px;
 }
 /***************************/
-
 .feedback_form h3 {
     text-align: left;
     color: rgb(0, 0, 0);
@@ -644,28 +494,8 @@ table caption {
     margin: 20px auto;
 }
 
-.swipe_icon {
-    position: absolute;
-    bottom: -10px;
-    left: 253px;
-    width: 40px;
-    height: auto;
-}
-
-.swipe_icon img {
-    width: 100%;
-    height: auto;
-}
-
 .white-popup-block {
     padding: 0 20px;
-}
-
-.mfp-auto-cursor .mfp-content {
-    max-width: 600px;
-    background-color: #ffffff;
-    margin-top: 20px;
-    border-radius: 3px;
 }
 
 .inp_mfp {
@@ -727,22 +557,9 @@ table caption {
 
 .bgimg {
     background-image: url("../img/bepatientonline.png");
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-flow: column wrap;
-    -ms-flex-flow: column wrap;
     flex-flow: column wrap;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
     justify-content: center;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
     align-items: center;
     width: 18.125em;
     height: 14em;
@@ -780,24 +597,6 @@ table caption {
     font-size: 0.95em;
     margin: 1.5em 0;
     position: relative;
-}
-@media (max-width: 350px) {
-    .mfp-container {
-        width: 280px;
-        height: 0;
-    }
-}
-
-article p.spoilerbody {
-    border-bottom: 1px solid #cfd5dd;
-}
-
-article a.open {
-    border-bottom: none;
-}
-
-article a.open:before {
-    transform: rotate(90deg);
 }
 
 .activSubMenu {
@@ -879,7 +678,6 @@ article a.open:before {
 .file > span {
     background-color: #fd7100;
     border: 1px solid #fd7100;
-    -webkit-box-shadow: 1px 2px 5px 0 rgba(24, 83, 148, .14);
     box-shadow: 1px 2px 5px 0 rgba(24, 83, 148, .14);
     color: #fff;
 }
@@ -910,6 +708,7 @@ article a.open:before {
     color: black;
 }
 /*версия для слабовидящих*/
+
 .poorVision-controls {
     display: none;
 }

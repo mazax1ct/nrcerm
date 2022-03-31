@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>Федеральное государственное бюджетное учреждение «Всероссийский центр экстренной и радиационной медицины имени А.М. Никифорова» МЧС России</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="https://nrcerm.ru/templates/nrcerm/dist/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://nrcerm.ru/templates/nrcerm/dist/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://nrcerm.ru/templates/nrcerm/dist/img/favicon-16x16.png">
+    <link rel="manifest" href="https://nrcerm.ru/templates/nrcerm/dist/img/manifest.json">
+    <link rel="mask-icon" href="https://nrcerm.ru/templates/nrcerm/dist/img/safari-pinned-tab.svg" color="#1a589d">
+    <meta name="theme-color" content="#ffffff">
+
+    <!--<script src="js/pace.js"></script>
+    <link rel="stylesheet" href="css/plugins_and_other/pace-theme-flash.css">-->
+
+    <link rel="stylesheet" href="css/plugins_and_other/meyer-reset2.css">
+
+    <link rel="stylesheet" href="css/main.css">
+
+    <link rel="stylesheet" href="css/plugins_and_other/font-awesome.css">
+
+    <link rel="stylesheet" href="css/plugins_and_other/additional.css">
+
+    <script src="https://cdn.jsdelivr.net/combine/npm/jquery@3.3.1,npm/jquery-ui@1.12.1,npm/jquery-validation@1.17.0,npm/swiper@4.2.2,npm/responsive-tabs@1.6.3,npm/magnific-popup@1.1.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js"></script>
+</head>
+
+<body>
+
+    <header class="header_slider"
+      data-slides='["https://nrcerm.ru/images/slider/banner.jpg", "https://nrcerm.ru/images/slider/blefaroplastika.jpg", "https://nrcerm.ru/files/lasic.jpeg", "https://nrcerm.ru/images/slider/nederzhanie_obrabotano.jpg", "https://nrcerm.ru/files/ynews-250396410.jpeg"]'>
+    
+        <div class="header content_width" style="position: relative; z-index: 2">
+            <div class="header_left ignore-all">
+                <a class="ignore-all" href="#" title="На главную">
+                    <img class="logo" src="images/logo.png" alt="На главную">
+                    <span umi:object-id="344" class="logo_text" umi:field-name="site_name">ФГБУ «Всероссийский центр экстренной<br>и радиационной медицины<br>имени А.М. Никифорова» МЧС России</span>
+                    <span umi:object-id="344" class="logo_text_mobile" umi:field-name="site_name">ФГБУ ВЦЭРМ</span>
+                </a>
+            </div>
+            <div class="header_right">
+                <div class="blindSelector-wrapper content_width ignore-all">
+                    <div class="blindSelector ignore-all">
+                        <div class="poorVision-controls ignore-all hidden">
+                            <a class="limited_capabilities" href="#">Версия для слабовидящих</a>
+                            Размер шрифта
+                            <div class="poorVision-control ignore-all" onclick="fontRescale(-1)"><span>A-</span></div>
+                            <div class="poorVision-control ignore-all" onclick="fontRescale(1)"><span>A+</span></div>
+                            Интервал
+                            <div class="poorVision-control ignore-all" onclick="setLineHeight(-1)"><span>-</span></div>
+                            <div class="poorVision-control ignore-all" onclick="setLineHeight(1)"><span>+</span></div>
+                            Цвет сайта
+                            <div class="poorVision-control ignore-all" onclick="setColors('white-black')"><span>Ц</span></div>
+                            <div class="poorVision-control ignore-all black-white" onclick="setColors('black-white')"><span>Ц</span></div>
+                            <div class="poorVision-control ignore-all blue-yellow" onclick="setColors('blue-yellow')"><span>Ц</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header_right_top">
+                    <ul>
+                        <li><a href="https://lk.nrcerm.ru" target="_blank">Личный кабинет</a></li>
+                        <li><a href="/departments-centers/department/transfusiology/">Донору</a></li>
+                        <li><a href="/departments-centers/contacts/">Контакты</a></li>
+                    </ul>
+                    <a class="button orangebutton" href="/patient-guide/appointment/">Записаться</a>
+                </div>
+                <a class="limited_capabilities" href="#">Версия для слабовидящих</a>
+                <div class="header_right_bottom">
+                    <div class="iconed_text">
+                        <a href="tel:+7 (812) 339-39-39" class="phone_icon"></a>
+                        <div class="iconed_text_info">
+                            <span>Телефон для записи</span>
+                            <a href="tel:+7 (812) 339-39-39">+7 (812) 339-39-39</a>
+                        </div>
+                    </div>
+                    <div class="toggle_menu">
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                    </div>
+                    <form action="/search/search_do/" method="get" class="search_block" id="searchtop">
+                        <input class="search ui-autocomplete-input" type="text" placeholder="Поиск по сайту" name="search_string" autocomplete="off">
+                        <a href="javascript:;" onclick="document.getElementById('searchtop').submit();" class="searchclick"></a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    
+        <nav class="content_width">
+            <ul>
+                <li class="childrened"><a href="https://nrcerm.ru/departments-centers/about-us/">О Центре</a>
+                    <div class="nav_secondary">
+                        <ul>
+                            <li>
+                                <a href="https://nrcerm.ru/departments-centers/about-us/history/">История Центра</a>
+                            </li>
+                            <li>
+                                <a href="https://nrcerm.ru/departments-centers/about-us/administration/">Администрация Центра</a>
+                            </li>
+                            <li>
+                                <a href="https://nrcerm.ru/departments-centers/about-us/licenziya/">Лицензия</a>
+                            </li>
+                            <li>
+                                <a href="https://nrcerm.ru/departments-centers/about-us/vacancies/">Вакансии</a>
+                            </li>
+                            <li>
+                                <a href="https://nrcerm.ru/departments-centers/about-us/oms/">Работа в системе ОМС</a>
+                            </li>
+                            <li>
+                                <a href="https://nrcerm.ru/departments-centers/about-us/vmp/">Высокотехнологичная медицинская помощь</a>
+                            </li>
+                            <li>
+                                <a href="https://nrcerm.ru/departments-centers/about-us/pmu/">Оказание платных медицинских услуг</a>
+                            </li>
+                            <li>
+                                <a href="https://nrcerm.ru/departments-centers/about-us/meropriyatiya-soyuznogo-gosudarstva/">Мероприятия Союзного государства</a>
+                            </li>
+                            <li>
+                                <a href="https://nrcerm.ru/departments-centers/about-us/medicinskaya-pomow-inostrannym-grazhdanam/">Медицинская помощь иностранным гражданам</a>
+                            </li>
+                            <li>
+                                <a href="https://nrcerm.ru/departments-centers/about-us/finansovo-hozyajstvennaya-deyatelnost/">Финансово-хозяйственная деятельность</a>
+                            </li>
+                            <li>
+                                <a href="https://nrcerm.ru/departments-centers/about-us/specialnaya-ocenka-uslovij-truda/">Специальная оценка условий труда</a>
+                            </li>
+                        </ul>
+                        <figure class="nav_secondary_right">
+                            <img class="img-responsive" src="images/img_7572_306_156_jpg_5_80.jpg" alt="" umi:element-id="4" umi:field-name="header_pic" width="306" height="156">
+                            <figcaption><a href="https://nrcerm.ru/departments-centers/novosti/">Новости</a></figcaption>
+                        </figure>
+                    </div>
+                </li>
+                <li class="childrened"><a href="https://nrcerm.ru/patient-guide/">Пациентам</a>
+                    <div class="nav_secondary">
+                        <ul>
+                            <li>
+                                <a href="http://nrcerm.ru/patient-guide/services-and-procedures1/">Услуги и процедуры</a>
+                            </li>
+                            <li>
+                                <a href="https://nrcerm.ru/patient-guide/diseases/">Болезни и состояния</a>
+                            </li>
+                            <li>
+                                <a href="https://nrcerm.ru/patient-guide/vopros-otvet/">Вопрос-ответ</a>
+                            </li>
+                            <li>
+                                <a href="https://nrcerm.ru/patient-guide/reviews/">Истории/отзывы пациентов</a>
+                            </li>
+                            <li>
+                                <a href="http://nrcerm.ru/patient-guide/pravila-povedeniya-pacientov/">Правила поведения пациентов</a>
+                            </li>
+                            <li>
+                                <a href="http://nrcerm.ru/patient-guide/spravka-v-nalogovye-organy-rf/">Справка в налоговые органы РФ</a>
+                            </li>
+                            <li>
+                                <a href="https://nrcerm.ru/patient-guide/first-aid/">Первая помощь</a>
+                            </li>
+                            <li>
+                                <a href="https://nrcerm.ru/patient-guide/live-healthy/">Здоровый образ жизни</a>
+                            </li>
+                        </ul>
+                        <figure class="nav_secondary_right">
+                            <img class="img-responsive" src="images/whatsapp_image_2021-03-10_at_12_42_25_306_156_jpeg_5_80.jpeg" alt="" umi:element-id="21" umi:field-name="header_pic" width="306" height="156">
+                            <figcaption><a href="https://nrcerm.ru/patient-guide/appointment/">Записаться на прием</a></figcaption>
+                        </figure>
+                    </div>
+                </li>
+                <li class="childrened"><a href="https://nrcerm.ru/departments-centers/department/">Отделения и центры</a>
+                    <div class="nav_secondary">
+                        <ul>
+                            <li>
+                                <a href="https://nrcerm.ru/departments-centers/department/polyclinic/">Амбулаторная помощь/поликлиника</a>
+                            </li>
+                            <li>
+                                <a href="https://nrcerm.ru/departments-centers/department/surgical-emergency-care/">Отделение экстренной хирургической помощи</a>
+                            </li>
+                            <li>
+                                <a href="https://nrcerm.ru/departments-centers/department/neurosurgery/">Отделение нейрохирургии</a>
+                            </li>
+                            <li>
+                                <a href="https://nrcerm.ru/departments-centers/department/plastic-surgery/">Ожоговое отделение с пластической хирургией</a>
+                            </li>
+                            <li>
+                                <a href="https://nrcerm.ru/departments-centers/department/department-of-medical-rehabilitation/">Отделение реабилитации</a>
+                            </li>
+                            <li>
+                                <a href="https://nrcerm.ru/departments-centers/department/dialysis/">Отделение диализа и методов гравитационной хирургии крови</a>
+                            </li>
+                            <li>
+                                <a href="https://nrcerm.ru/departments-centers/department/traumatology/">Отделение травматологии и ортопедии</a>
+                            </li>
+                            <li>
+                                <a href="https://nrcerm.ru/departments-centers/department/department-of-nuclear-medicine/">Отдел ядерной медицины</a>
+                            </li>
+                            <li>
+                                <a href="https://nrcerm.ru/departments-centers/department/psychology/">Отдел клинической психологии </a>
+                            </li>
+                            <li>
+                                <a href="https://nrcerm.ru/departments-centers/department/">Все отделения</a>
+                            </li>
+                        </ul>
+                        <figure class="nav_secondary_right">
+                            <img class="img-responsive" src="images/zvezda_306_156_jpg_5_80.jpg" alt="" umi:element-id="9" umi:field-name="header_pic" width="306" height="156">
+                            <figcaption><a href="https://nrcerm.ru/departments-centers/specialists/">Специалисты</a></figcaption>
+                        </figure>
+                    </div>
+                </li>
+                <li class="childrened"><a href="https://nrcerm.ru/science/">Научная деятельность</a>
+                    <div class="nav_secondary nav_secondary_right">
+                        <ul>
+                            <li>
+                                <a href="https://nrcerm.ru/science/academic-council/">Ученый совет</a>
+                            </li>
+                            <li>
+                                <a href="https://nrcerm.ru/science/research/">Научно-исследовательская работа</a>
+                            </li>
+                            <li>
+                                <a href="https://nrcerm.ru/science/editorial-and-publishing/">Редакционно-издательская деятельность</a>
+                            </li>
+                            <li>
+                                <a href="https://nrcerm.ru/science/conferences/">Научные конференции</a>
+                            </li>
+                            <li>
+                                <a href="http://nrcerm.ru/science/elektronnye-resursy/">Ресурсы издательства Springer</a>
+                            </li>
+                            <li>
+                                <a href="https://nrcerm.ru/information-for-professionals/publications/">Публикации</a>
+                            </li>
+                        </ul>
+                        <figure class="nav_secondary_right">
+                            <img class="img-responsive" src="images/dscn6395-min_306_156_jpg_5_80.jpg" alt="" umi:element-id="27" umi:field-name="header_pic" width="306" height="156">
+                            <figcaption><a href="https://nrcerm.ru/science/dissertation-councils/">Диссертационные советы</a></figcaption>
+                        </figure>
+                    </div>
+                </li>
+                <li class="childrened"><a href="https://nrcerm.ru/education/">Образовательная деятельность</a>
+                    <div class="nav_secondary nav_secondary_right">
+                        <ul>
+                            <li>
+                                <a href="https://nrcerm.ru/education/postgraduate-studies/">Аспирантура</a>
+                            </li>
+                            <li>
+                                <a href="https://nrcerm.ru/education/ordinatura/">Ординатура</a>
+                            </li>
+                            <li>
+                                <a href="https://nrcerm.ru/education/kafedry/">Кафедры</a>
+                            </li>
+                            <li>
+                                <a href="https://nrcerm.ru/education/continuing-medical-education/">Непрерывное медицинское образование</a>
+                            </li>
+                            <li>
+                                <a href="https://nrcerm.ru/education/attaching-dissertation/">Прикрепление лиц для подготовки диссертации</a>
+                            </li>
+                            <li>
+                                <a href="https://nrcerm.ru/education/replacement-of-educational-positions/">Конкурс на замещение должностей педагогических работников</a>
+                            </li>
+                            <li>
+                                <a href="https://nrcerm.ru/education/informational-educational-environment/">Информационно-образовательная среда</a>
+                            </li>
+                            <li>
+                                <a href="https://nrcerm.ru/education/distance-learning/">Система дистанционного обучения</a>
+                            </li>
+                            <li>
+                                <a href="https://nrcerm.ru/education/prajs-na-obrazovatelnye-uslugi/">Прайс на образовательные услуги</a>
+                            </li>
+                            <li>
+                                <a href="https://nrcerm.ru/education/svedeniya-ob-obrazovatelnoj-organizacii-2/">Сведения об образовательной организации</a>
+                            </li>
+                        </ul>
+                        <figure class="nav_secondary_right">
+                            <img class="img-responsive" src="images/1_306_156_jpg_5_80.jpg" alt="" umi:element-id="36" umi:field-name="header_pic" width="306" height="156">
+                            <figcaption><a href="https://nrcerm.ru/education/additional-professional-education/">Дополнительное профессиональное образование</a></figcaption>
+                        </figure>
+                    </div>
+                </li>
+                <li><a href="https://nrcerm.ru/medical-tourism/">Medical tourism</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="full_width">
+        <div class="content_width">
+            <ul class="breadcrumbs">
+                <li>
+                    <a href="/">
+                        <div class="favicon"></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="/departments-centers/">Отделения и центры</a>
+                </li>
+                <li>
+                    <a href="/departments-centers/specialists/">Специалисты</a>
+                </li>
+                <li>Алексанин Сергей Сергеевич</li>
+            </ul>
+
+            <div class="secondary_content">
+                <button class="js-aside-opener aside_opener button orangebutton" type="button">Открыть меню</button>
+                <aside class="aside_secondary">
+                    <div class="aside_secondary_h_block">
+                        <h2 class="aside_secondary_h">Отделения и центры</h2>
+                        <button class="js-aside-closer aside_secondary_closer" type="button" title="Закрыть меню"><span></span></button>
+                    </div>
+                    <ul class="aside_secondary_menu">
+                        <li>
+                            <a href="/departments-centers/novosti/">Новости</a>
+                            <div></div>
+                        </li>
+                        <li class="expanded">
+                            <a href="/departments-centers/specialists/">Специалисты</a>
+                            <div></div>
+                        </li>
+                        <li>
+                            <a href="/departments-centers/department/">Отделения</a>
+                            <div></div>
+                        </li>
+                        <li>
+                            <a href="/departments-centers/about-us/">О ВЦЭРМ им. А.М. Никифорова МЧС России </a>
+                            <ul>
+                                <li>
+                                    <a href="/departments-centers/about-us/history/" class="">История Центра</a>
+                                </li>
+                                <li>
+                                    <a href="/departments-centers/about-us/administration/" class="">Администрация Центра</a>
+                                </li>
+                                <li>
+                                    <a href="/departments-centers/about-us/licenziya/" class="">Лицензия</a>
+                                </li>
+                                <li>
+                                    <a href="/departments-centers/about-us/oms/" class="">Работа в системе ОМС</a>
+                                </li>
+                                <li>
+                                    <a href="/departments-centers/about-us/vmp/" class="">Высокотехнологичная медицинская помощь</a>
+                                </li>
+                                <li>
+                                    <a href="/departments-centers/about-us/pmu/" class="">Оказание платных медицинских услуг</a>
+                                </li>
+                                <li>
+                                    <a href="/departments-centers/about-us/meropriyatiya-soyuznogo-gosudarstva/" class="">Мероприятия Союзного государства</a>
+                                </li>
+                                <li>
+                                    <a href="/departments-centers/about-us/medicinskaya-pomow-inostrannym-grazhdanam/" class="">Медицинская помощь иностранным гражданам</a>
+                                </li>
+                                <li>
+                                    <a href="/departments-centers/about-us/finansovo-hozyajstvennaya-deyatelnost/" class="">Финансово-хозяйственная деятельность</a>
+                                </li>
+                                <li>
+                                    <a href="/departments-centers/about-us/specialnaya-ocenka-uslovij-truda/" class="">Специальная оценка условий труда</a>
+                                </li>
+                                <li>
+                                    <a href="/departments-centers/about-us/god-grazhdanskoj-oborony-v-mchs-rossii-2017/" class="">Год гражданской обороны в МЧС России 2017</a>
+                                </li>
+                                <li>
+                                    <a href="/departments-centers/about-us/vacancies/" class="">Вакансии</a>
+                                </li>
+                            </ul>
+                            <div></div>
+                        </li>
+                        <li>
+                            <a href="/departments-centers/contacts/">Контакты</a>
+                            <div></div>
+                        </li>
+                    </ul>
+                    <div class="ekran-big">
+                        <div class="be_pacient_online">
+                            <div class="be_pacient_online_h">Записаться на прием</div>
+                            <a class="button orangebutton popup-with-form" href="#test-form">Записаться</a>
+
+                            <form method="post" action="/webforms/addnew/" class="white-popup-block mfp-hide" id="test-form" enctype="multipart/form-data" novalidate="novalidate">
+                                <h2>Записаться на прием</h2>
+                                <input type="hidden" name="system_email_to" value="909">
+                                <div class=""></div>
+                                <div class="">
+                                    <input type="text" name="data[new][predstavtes_pozhalujsta]" id="formfield_predstavtes_pozhalujsta" placeholder="Представьтесь, пожалуйста" value="">
+                                </div>
+                                <div class="important">
+                                    <input type="text" name="data[new][telefon]" id="formfield_telefon" placeholder="Телефон" required="" value="">
+                                </div>
+                                <div class="">
+                                    <input type="text" name="data[new][email]" id="formfield_email" placeholder="Email" value="">
+                                </div>
+                                <div class="">
+                                    <textarea name="data[new][kommentar]" placeholder="Ваш вопрос"></textarea>
+                                </div>
+                                <div class="hide">
+                                    <input type="text" name="data[new][url_zapisi]" id="formfield_url_zapisi" placeholder="url" value="/patient-guide/diseases/">
+                                </div>
+                                <input type="hidden" name="system_form_id" value="135">
+                                <input type="hidden" name="ref_onsuccess" value="">
+                                <div class="personal_data_wrapper hide">
+                                    <input id="personal-data-notes" type="checkbox" name="data[new][personal-data-notes]">
+                                    <label for="personal-data-notes">
+                                        Ознакомлен с положением <a href="/usloviya-ispolzovaniya/">о данных</a>
+                                    </label>
+                                </div>
+                                <div class="personal_data_wrapper">
+                                    <input id="common-152-federal-law" type="checkbox" name="personal" required="">
+                                    <label for="common-152-federal-law">
+                                        Ознакомлен с положением <a href="/privacy/">о конфиденциальности</a>
+                                    </label>
+                                </div>
+                                <input type="submit" class="orangebutton" value="Отправить">
+                            </form>
+                        </div>
+                    </div>
+                </aside>
+                <section>
+                    <article>
+                        <h1 umi:element-id="9" umi:field-name="h1">Алексанин Сергей Сергеевич</h1>
+                        <div class="content_phoblock">
+                            <div class="content_phoblock_photo">
+                                <img class="img-responsive" src="https://nrcerm.ru/images/cms/thumbs/a5b0aeaa3fa7d6e58d75710c18673bd7ec6d5f6d/ass_234_240_png_5_80.png" alt="Алексанин Сергей Сергеевич " umi:element-id="141"
+                                  umi:field-name="izobrazhenie" width="234" height="240">
+                            </div>
+                            <article class="content_phoblock_content custom">
+                                <table class="listinfo">
+                                    <tbody>
+                                        <tr>
+                                            <td>Должность:</td>
+                                            <td>Директор</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Звание:</td>
+                                            <td>Член-корреспондент Российской академии наук, главный (внештатный) врач МЧС России, заслуженный врач Российской Федерации, доктор медицинских наук, профессор, врач высшей квалификационной категории</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Отделение:</td>
+                                            <td>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <a class="button orangebutton popup-with-form" href="#test-form">Записаться на прием</a>
+                            </article>
+                        </div>
+
+                        <div class="tabz">
+                            <div class="tabz-header" style="cursor: move;">
+                                <ul>
+                                    <li><a href="#tab_1" class="active">Биография</a></li>
+                                    <li><a href="#tab_4" class="">Достижения и награды</a></li>
+                                    <li><a href="#tab_5" class="">Отзывы</a></li>
+                                </ul>
+                                <div class="swipe_icon"><img src="/templates/nrcerm/dist/img/icons/swipe.png" alt=""></div>
+                            </div>
+                            <div id="tab_1" class="tab_content active">
+                                <div class="headered_horizontal"><span>Образование</span>
+                                    <article>
+                                        <p>После окончания в 1980 году Военно-медицинского факультета при Куйбышевском медицинском институте проходил службу в должности начальника медпункта войсковой части.</p>
+                                        <p>За период службы в Военно-медицинской академии неоднократно командировался в Афганистан и на территории, радиоактивно загрязненные в результате аварии на Чернобыльской АЭС. В 1999 году работал в составе
+                                            аэромобильного госпиталя МЧС России в Югославии в качестве главного терапевта. В 2013 году в качестве руководителя мобильных медицинских бригад МЧС России организовывал ликвидацию последствий чрезвычайной
+                                            ситуации (затопление) территорий Дальнего Востока.</p>
+                                    </article>
+                                </div>
+                                <div class="headered_horizontal"><span>Места работы</span>
+                                    <article>
+                                        <p>1982-1997 гг. – служба в научно-исследовательском подразделении Военно-медицинской академии им. С.М. Кирова МО.</p>
+                                        <p>1997 г. – назначен на должность начальника отдела Северо-Западного регионального центра МЧС России.</p>
+                                        <p>1999 г. – принят на должность заместителя директора ВЦЭРМ МЧС России по научной и учебной работе.</p>
+                                        <p>2006 г. – приказом Министра МЧС России С.С. Алексанин назначен директором ВЦЭРМ МЧС России.</p>
+                                        <p>Председатель докторских диссертационных советов Д 205.001.01, Д 205.001.02 на базе ВЦЭРМ им. А.М.Никифорова МЧС России.</p>
+                                        <p>Главный редактор журнала «Медико-биологические и социально-психологические проблемы безопасности в чрезвычайных ситуациях».</p>
+                                        <p>Под научным руководством Алексанина С.С. защищено – 6 докторских и 25 кандидатских диссертаций по медицинским и биологическим наукам. Автор более 250 печатных работ, в том числе 17 монографий, 30 учебных
+                                            пособий, методических пособий, руководств, 5 авторских свидетельств (патентов) на изобретение.</p>
+                                    </article>
+                                </div>
+                            </div>
+                            <div id="tab_2" class="tab_content">
+                                <div class="headered_horizontal">
+                                    <span>Проводимые операции и процедуры</span>
+                                    <article>
+                                        <ol class="compact_list"></ol>
+                                    </article>
+                                </div>
+                            </div>
+                            <div id="tab_3" class="tab_content">
+                            </div>
+                            <div id="tab_4" class="tab_content">
+                                <article umi:element-id="141" umi:field-name="opisanie">
+                                    <p>Награжден орденом «За службу Родине в Вооруженных силах СССР» 3 ст., нагрудным знаком МЧС России «За заслуги», нагрудными знаками МЧС России «Почетный знак МЧС России» и «Участник ликвидации последствий ЧС»,
+                                        медалью МЧС России «15 лет МЧС России», медалью «75 лет гражданской обороне».</p>
+                                </article>
+                                <div class="certs"></div>
+                            </div>
+                            <div id="tab_5" class="tab_content">
+                                <div id="comments" class="comment_list" umi:module="comments" umi:add-method="none" umi:region="list" umi:sortable="sortable">
+                                    <div class="headered_horizontal" umi:element-id="2659" umi:region="row">
+                                        <span class="headered_horizontal_smallspan">
+                                            Людмила
+                                            <span umi:field-name="publish_time">07.04.20</span>
+                                        </span>
+                                        <article>
+                                            <p umi:field-name="message" umi:delete="delete">12.02.2020 была на УЗИ щитовидной железы. Анахаева Ж.М.очень грамотный и отзывчивый доктор. Спасибо Вам огромное.</p>
+                                        </article>
+                                    </div>
+                                </div>
+                                <div class="feedback_form">
+                                    <h3>Добавить отзыв</h3>
+                                    <form method="post" action="/comments/post/141/" role="form" id="umi_the_best" class="validate_form" novalidate="novalidate">
+                                        <fieldset>
+                                            <input type="text" name="author_nick" placeholder="Ваше имя" required="required" id="author_nick">
+                                            <input type="email" name="author_email" placeholder="Введите e-mail" required="required" id="author_email">
+                                            <textarea name="comment" placeholder="Ваш отзыв" id="comment" required="required"></textarea>
+                                            <div class="personal_data_wrapper hide">
+                                                <input id="personal-data-notes" type="checkbox" name="data[new][personal-data-notes]">
+                                                <label for="personal-data-notes">
+                                                    Ознакомлен с положением <a href="/usloviya-ispolzovaniya/">о данных</a>
+                                                </label>
+                                            </div>
+                                            <div class="personal_data_wrapper">
+                                                <input id="common-159-federal-law" type="checkbox" name="personal" required="">
+                                                <label for="common-159-federal-law">
+                                                    Ознакомлен с положением <a href="/privacy/">о конфиденциальности</a>
+                                                </label>
+                                            </div>
+                                            <input type="submit" class="button orangebutton" value="Отправить отзыв">
+                                        </fieldset>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <div class="ekran-small">
+                        <div class="be_pacient_online">
+                            <div class="be_pacient_online_h">Записаться на прием</div>
+                            <a class="button orangebutton popup-with-form" href="#test-form">Записаться</a>
+                            <form method="post" action="/webforms/addnew/" class="white-popup-block mfp-hide" id="test-form" enctype="multipart/form-data">
+                                <h2>Записаться на прием</h2>
+                                <input type="hidden" name="system_email_to" value="909">
+                                <div class=""></div>
+                                <div class="">
+                                    <input type="text" name="data[new][predstavtes_pozhalujsta]" id="formfield_predstavtes_pozhalujsta" placeholder="Представьтесь, пожалуйста" value="">
+                                </div>
+                                <div class="important">
+                                    <input type="text" name="data[new][telefon]" id="formfield_telefon" placeholder="Телефон" required="" value="">
+                                </div>
+                                <div class="">
+                                    <input type="text" name="data[new][email]" id="formfield_email" placeholder="Email" value="">
+                                </div>
+                                <div class="">
+                                    <textarea name="data[new][kommentar]" placeholder="Ваш вопрос"></textarea>
+                                </div>
+                                <div class="hide">
+                                    <input type="text" name="data[new][url_zapisi]" id="formfield_url_zapisi" placeholder="url" value="/patient-guide/diseases/">
+                                </div>
+                                <input type="hidden" name="system_form_id" value="135">
+                                <input type="hidden" name="ref_onsuccess" value="">
+                                <div class="personal_data_wrapper hide">
+                                    <input id="personal-data-notes" type="checkbox" name="data[new][personal-data-notes]">
+                                    <label for="personal-data-notes">
+                                        Ознакомлен с положением <a href="/usloviya-ispolzovaniya/">о данных</a>
+                                    </label>
+                                </div>
+                                <div class="personal_data_wrapper">
+                                    <input id="common-152-federal-law" type="checkbox" name="personal" required="">
+                                    <label for="common-152-federal-law">
+                                        Ознакомлен с положением <a href="/privacy/">о конфиденциальности</a>
+                                    </label>
+                                </div>
+                                <input type="submit" class="orangebutton" value="Отправить">
+                            </form>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <footer class="full_width">
+        <div class="content_width">
+            <div class="footer_content">
+                <div class="footer_content_main">
+                    <a href="https://nrcerm.ru/" title="ФГБУ «Всероссийский центр экстренной&lt;br/&gt;и радиационной медицины&lt;br/&gt;имени А.М. Никифорова» МЧС России">
+                        <img src="images/logo.png" alt="ФГБУ «Всероссийский центр экстренной&lt;br/&gt;и радиационной медицины&lt;br/&gt;имени А.М. Никифорова» МЧС России">
+                    </a>
+                    <div class="footer_content_cont">
+                        <div class="iconed_text">
+                            <div class="phone_icon"></div>
+                            <div class="iconed_text_info">
+                                <span>Телефон для записи</span>
+                                <a class="big_font" href="tel:+7 (812) 339-39-39" umi:object-id="344" umi:field-name="phone">+7 (812) 339-39-39</a>
+                            </div>
+                        </div>
+                        <div class="iconed_text">
+                            <div class="point_map"></div>
+                            <div class="iconed_text_info">
+                                <span>
+                                    194044, Санкт-Петербург,<br>ул. Академика Лебедева, 4/2<br>
+                                    E-mail: <a href="mailto:medicine@nrcerm.ru" umi:object-id="344" umi:field-name="email">medicine@nrcerm.ru</a>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="iconed_text">
+                            <div class="point_map"></div>
+                            <div class="iconed_text_info">
+                                <span>
+                                    197082, Санкт-Петербург,<br>ул. Оптиков, д.54<br>
+                                    E-mail: <a href="mailto:medicine@nrcerm.ru" umi:object-id="344" umi:field-name="email">medicine@nrcerm.ru</a>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="error_found">Маркетинговая поддержка <a href="https://vsignal.ru/" title="Маркетинговое агенство «VSignal»" target="_blank">VSignal</a></div>
+                    </div>
+                    <ul class="footer_menu">
+                        <li><a href="https://nrcerm.ru/patient-guide/">Информация для пациентов</a></li>
+                        <li><a href="https://nrcerm.ru/departments-centers/">Отделения и центры</a></li>
+                        <li><a href="https://nrcerm.ru/science/">Научная деятельность</a></li>
+                        <li><a href="https://nrcerm.ru/education/">Образовательная деятельность</a></li>
+                        <li><a href="https://nrcerm.ru/information-for-professionals/">Информация для профессионалов</a></li>
+                        <li><a href="https://nrcerm.ru/products-services/">Продукты и услуги</a></li>
+                        <li><a href="https://nrcerm.ru/departments-centers/contacts/">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer_content_dop">
+                    <form action="/search/search_do/" method="get" id="searchbottom">
+                        <input class="search search_light ui-autocomplete-input" type="text" placeholder="Поиск по сайту" name="search_string" autocomplete="off">
+                        <a href="javascript:;" onclick="document.getElementById('searchbottom').submit();" class="searchclick"></a>
+                    </form>
+                    <ul style="margin: -30px 0px 15px 0px;">
+                        <li>
+                            <a href="https://vk.com/nrcerm" tatget="_blank">
+                                <div class="vk_big_tr"></div>
+                                <div class="vk_big"></div>
+                            </a>
+                        </li>
+                    </ul>
+                    <iframe src="https://nok.rosminzdrav.ru/MO/GetBanner/10650/1" border="0" scrolling="no" allowtransparency="true" style="border: 0;margin: 0 auto;display: block;" width="300" height="110"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="full_width black_back">
+            <div class="copy_content content_width"><span>© 2006 - 2022 ФГБУ ВЦЭРМ им. А.М.Никифорова МЧС России. Все права защищены.</span>
+                <ul>
+                    <li>
+                        <a href="https://nrcerm.ru/privacy/">Положение о конфиденциальности</a>
+                    </li>
+                    <li>
+                        <a href="https://nrcerm.ru/usloviya-ispolzovaniya/">Условия использования</a>
+                    </li>
+                    <li>
+                        <a href="https://nrcerm.ru/protivodejstvie-korrupcii/">Противодействие коррупции</a>
+                    </li>
+                    <li>
+                        <a href="https://nrcerm.ru/protivodejstvie-terrorizmu/">Противодействие терроризму</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <div class="navigation_popup">
+        <div class="navigation_popup-container">
+            <div class="navigation_header">
+                <div class="search_block">
+                    <form action="/search/search_do/" method="get" class="search_block">
+                        <input class="search ui-autocomplete-input" type="text" placeholder="Поиск по сайту" name="search_string" autocomplete="off">
+                        <button><i class="fa fa-search fa-rotate-90" aria-hidden="true"></i></button>
+                    </form>
+                </div>
+                <div class="close"><img src="images/close.png" alt=""></div>
+            </div>
+            <ul class="navigation_popup_menu">
+                <li>
+                    <a href="https://nrcerm.ru/departments-centers/about-us/">О Центре</a>
+                    <ul>
+                        <li>
+                            <a href="https://nrcerm.ru/departments-centers/about-us/history/">История Центра</a>
+                        </li>
+                        <li>
+                            <a href="https://nrcerm.ru/departments-centers/about-us/administration/">Администрация Центра</a>
+                        </li>
+                        <li>
+                            <a href="https://nrcerm.ru/departments-centers/about-us/licenziya/">Лицензия</a>
+                        </li>
+                        <li>
+                            <a href="https://nrcerm.ru/departments-centers/novosti/">Новости</a>
+                        </li>
+                        <li>
+                            <a href="https://nrcerm.ru/departments-centers/about-us/vacancies/">Вакансии</a>
+                        </li>
+                        <li>
+                            <a href="https://nrcerm.ru/departments-centers/about-us/oms/">Работа в системе ОМС</a>
+                        </li>
+                        <li>
+                            <a href="https://nrcerm.ru/departments-centers/about-us/vmp/">Высокотехнологичная медицинская помощь</a>
+                        </li>
+                        <li>
+                            <a href="https://nrcerm.ru/departments-centers/about-us/pmu/">Оказание платных медицинских услуг</a>
+                        </li>
+                        <li>
+                            <a href="https://nrcerm.ru/departments-centers/about-us/meropriyatiya-soyuznogo-gosudarstva/">Мероприятия Союзного государства</a>
+                        </li>
+                        <li>
+                            <a href="https://nrcerm.ru/departments-centers/about-us/medicinskaya-pomow-inostrannym-grazhdanam/">Медицинская помощь иностранным гражданам</a>
+                        </li>
+                        <li>
+                            <a href="https://nrcerm.ru/departments-centers/about-us/finansovo-hozyajstvennaya-deyatelnost/">Финансово-хозяйственная деятельность</a>
+                        </li>
+                        <li>
+                            <a href="https://nrcerm.ru/departments-centers/about-us/specialnaya-ocenka-uslovij-truda/">Специальная оценка условий труда</a>
+                        </li>
+                    </ul>
+                    <div></div>
+                </li>
+                <li>
+                    <a href="https://nrcerm.ru/patient-guide/">Пациентам</a>
+                    <ul>
+                        <li>
+                            <a href="https://nrcerm.ru/patient-guide/appointment/">Записаться на прием</a>
+                        </li>
+                        <li>
+                            <a href="http://nrcerm.ru/patient-guide/services-and-procedures1/">Услуги и процедуры</a>
+                        </li>
+                        <li>
+                            <a href="https://nrcerm.ru/patient-guide/diseases/">Болезни и состояния</a>
+                        </li>
+                        <li>
+                            <a href="https://nrcerm.ru/patient-guide/vopros-otvet/">Вопрос-ответ</a>
+                        </li>
+                        <li>
+                            <a href="https://nrcerm.ru/patient-guide/reviews/">Истории/отзывы пациентов</a>
+                        </li>
+                        <li>
+                            <a href="http://nrcerm.ru/patient-guide/pravila-povedeniya-pacientov/">Правила поведения пациентов</a>
+                        </li>
+                        <li>
+                            <a href="http://nrcerm.ru/patient-guide/spravka-v-nalogovye-organy-rf/">Справка в налоговые органы РФ</a>
+                        </li>
+                        <li>
+                            <a href="https://nrcerm.ru/patient-guide/first-aid/">Первая помощь</a>
+                        </li>
+                        <li>
+                            <a href="https://nrcerm.ru/patient-guide/live-healthy/">Здоровый образ жизни</a>
+                        </li>
+                    </ul>
+                    <div></div>
+                </li>
+                <li>
+                    <a href="https://nrcerm.ru/departments-centers/department/">Отделения и центры</a>
+                    <ul>
+                        <li>
+                            <a href="https://nrcerm.ru/departments-centers/specialists/">Специалисты</a>
+                        </li>
+                        <li>
+                            <a href="https://nrcerm.ru/departments-centers/department/polyclinic/">Амбулаторная помощь/поликлиника</a>
+                        </li>
+                        <li>
+                            <a href="https://nrcerm.ru/departments-centers/department/surgical-emergency-care/">Отделение экстренной хирургической помощи</a>
+                        </li>
+                        <li>
+                            <a href="https://nrcerm.ru/departments-centers/department/neurosurgery/">Отделение нейрохирургии</a>
+                        </li>
+                        <li>
+                            <a href="https://nrcerm.ru/departments-centers/department/plastic-surgery/">Ожоговое отделение с пластической хирургией</a>
+                        </li>
+                        <li>
+                            <a href="https://nrcerm.ru/departments-centers/department/department-of-medical-rehabilitation/">Отделение реабилитации</a>
+                        </li>
+                        <li>
+                            <a href="https://nrcerm.ru/departments-centers/department/dialysis/">Отделение диализа и методов гравитационной хирургии крови</a>
+                        </li>
+                        <li>
+                            <a href="https://nrcerm.ru/departments-centers/department/traumatology/">Отделение травматологии и ортопедии</a>
+                        </li>
+                        <li>
+                            <a href="https://nrcerm.ru/departments-centers/department/department-of-nuclear-medicine/">Отдел ядерной медицины</a>
+                        </li>
+                        <li>
+                            <a href="https://nrcerm.ru/departments-centers/department/psychology/">Отдел клинической психологии </a>
+                        </li>
+                        <li>
+                            <a href="https://nrcerm.ru/departments-centers/department/">Все отделения</a>
+                        </li>
+                    </ul>
+                    <div></div>
+                </li>
+                <li>
+                    <a href="https://nrcerm.ru/science/">Научная деятельность</a>
+                    <ul>
+                        <li>
+                            <a href="https://nrcerm.ru/science/academic-council/">Ученый совет</a>
+                        </li>
+                        <li>
+                            <a href="https://nrcerm.ru/science/dissertation-councils/">Диссертационные советы</a>
+                        </li>
+                        <li>
+                            <a href="https://nrcerm.ru/science/research/">Научно-исследовательская работа</a>
+                        </li>
+                        <li>
+                            <a href="https://nrcerm.ru/science/editorial-and-publishing/">Редакционно-издательская деятельность</a>
+                        </li>
+                        <li>
+                            <a href="https://nrcerm.ru/science/conferences/">Научные конференции</a>
+                        </li>
+                        <li>
+                            <a href="http://nrcerm.ru/science/elektronnye-resursy/">Ресурсы издательства Springer</a>
+                        </li>
+                        <li>
+                            <a href="https://nrcerm.ru/information-for-professionals/publications/">Публикации</a>
+                        </li>
+                    </ul>
+                    <div></div>
+                </li>
+                <li>
+                    <a href="https://nrcerm.ru/education/">Образовательная деятельность</a>
+                    <ul>
+                        <li>
+                            <a href="https://nrcerm.ru/education/postgraduate-studies/">Аспирантура</a>
+    
+                        </li>
+                        <li>
+                            <a href="https://nrcerm.ru/education/ordinatura/">Ординатура</a>
+    
+                        </li>
+                        <li>
+                            <a href="https://nrcerm.ru/education/kafedry/">Кафедры</a>
+    
+                        </li>
+                        <li>
+                            <a href="https://nrcerm.ru/education/additional-professional-education/">Дополнительное профессиональное образование</a>
+    
+                        </li>
+                        <li>
+                            <a href="https://nrcerm.ru/education/continuing-medical-education/">Непрерывное медицинское образование</a>
+    
+                        </li>
+                        <li>
+                            <a href="https://nrcerm.ru/education/attaching-dissertation/">Прикрепление лиц для подготовки диссертации</a>
+    
+                        </li>
+                        <li>
+                            <a href="https://nrcerm.ru/education/replacement-of-educational-positions/">Конкурс на замещение должностей педагогических работников</a>
+    
+                        </li>
+                        <li>
+                            <a href="https://nrcerm.ru/education/informational-educational-environment/">Информационно-образовательная среда</a>
+    
+                        </li>
+                        <li>
+                            <a href="https://nrcerm.ru/education/distance-learning/">Система дистанционного обучения</a>
+    
+                        </li>
+                        <li>
+                            <a href="https://nrcerm.ru/education/prajs-na-obrazovatelnye-uslugi/">Прайс на образовательные услуги</a>
+    
+                        </li>
+                        <li>
+                            <a href="https://nrcerm.ru/education/svedeniya-ob-obrazovatelnoj-organizacii-2/">Сведения об образовательной организации</a>
+    
+                        </li>
+                    </ul>
+                    <div></div>
+                </li>
+                <li>
+                    <a href="https://nrcerm.ru/medical-tourism/">Medical tourism</a>
+                    <div></div>
+                </li>
+            </ul>
+            <div class="navigation_footer">
+                <div class="addit_info">
+                    <ul>
+                        <li><a href="https://lk.nrcerm.ru/" target="_blank">Личный кабинет</a></li>
+                        <li><a href="https://nrcerm.ru/departments-centers/department/transfusiology/">Донору</a></li>
+                        <li><a href="https://nrcerm.ru/departments-centers/contacts/">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="contact_block">
+                    <div class="contact_block-phone">
+                        <div class="iconed_text_info">
+                            <span>Телефон для записи</span>
+                            <a href="tel:+7 (812) 339-39-39">+7 (812) 339-39-39</a>
+                        </div>
+                    </div>
+                    <div class="contact_block-web">
+                        <ul style="margin: -30px 0px 15px 0px;">
+                            <li>
+                                <a href="https://www.facebook.com/nrcerm" tatget="_blank">
+                                    <div class="fb"></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://vk.com/nrcerm" tatget="_blank">
+                                    <div class="vk"></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/channel/UClnnWA4LrBnukWdgYHrx0pg" tatget="_blank">
+                                    <div class="youtube"></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/nrcerm/" tatget="_blank">
+                                    <div class="instagram"></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/nrcerm" tatget="_blank">
+                                    <div class="twitter"></div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <iframe src="https://nok.rosminzdrav.ru/MO/GetBanner/10650/1" border="0" scrolling="no" allowtransparency="true" style="border: 0;margin: 0 auto;display: block;" width="300" height="110"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/g/masonry@4.2.0"></script>
+    <script src="js/readmore.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/test.js"></script>
+    <script src="js/all.js"></script>
+    <script src="js/progressbar.js" async></script>
+
+    <script>
+        $(document).on('click', '.js-aside-opener', function() {
+            $('.aside_secondary').addClass('is-open');
+            return false;
+        });
+
+        $(document).on('click', '.js-aside-closer', function() {
+            $('.aside_secondary').removeClass('is-open');
+            return false;
+        });
+    </script>
+
+    <div id="mt_c" class="mfp-hide">
+        <div class="loading">
+            <div class="spinner"></div>
+            <div class="overlay"></div>
+        </div>
+        <div class="feedback_form">
+            <article>
+                <form accept-charset="utf-8" class="form">
+                    <div class="close mt_cl"></div>
+                    <p class="important_p"></p>
+                    <input type="hidden" name="system_email_to" value="662">
+                    <div class="hide">
+                        <input type="text" name="data[new][after]" id="formfield_after" placeholder="after">
+                    </div>
+                    <div class="hide">
+                        <input type="text" name="data[new][before]" id="formfield_before" placeholder="before">
+                    </div>
+                    <div class="">
+                        <input type="text" name="data[new][comment]" id="formfield_comment" placeholder="Комментарий для автора (необязательно)">
+                    </div>
+                    <div class="hide">
+                        <input type="text" name="data[new][error]" id="formfield_error" placeholder="Ошибка: ">
+                    </div>
+                    <div class="hide">
+                        <input type="text" name="data[new][key]" id="formfield_key" placeholder="key">
+                    </div>
+                    <input type="hidden" name="system_form_id" value="130">
+                    <div class="buttons"><input type="button" class="orangebutton mt_snd" value="Отправить">
+                    </div>
+                </form>
+            </article>
+        </div>
+    </div>
+</body>
+
+</html>

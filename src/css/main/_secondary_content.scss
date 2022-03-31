@@ -31,9 +31,9 @@
             overflow: visible;
             position: static;
             padding: 20px 0 0;
-            min-width: 18.125em;
+            min-width: 290px;
             top: auto;
-            width: 18.125em;
+            width: 290px;
             z-index: auto;
         }
 
@@ -75,7 +75,7 @@
     & > section {
         flex-grow: 1;
         @media(min-width: 1024px) {
-            padding-left: 30px;
+            padding-left: 20px;
         }
     }
 }
@@ -122,18 +122,19 @@
             cursor: pointer;
             width: 40px;
             z-index: 1;
-
-            &:last-child {
-                //display: none;
-            }
         }
 
         a {
             align-items: center;
             display: flex;
             color: #185394;
+            line-height: 1.375;
             min-height: 46px;
             padding: 0.5em;
+
+            & + div {
+                display: none;
+            }
         }
 
         &:hover {

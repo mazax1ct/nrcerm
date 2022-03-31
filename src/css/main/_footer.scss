@@ -149,53 +149,73 @@ footer {
     }
 }
 
-.copy_content ul {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-}
-
 .black_back {
     background-color: #000;
 }
 
 .copy_content {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-    height: 56px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    @media(min-width: 768px) {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+
+    ul {
+        @media(min-width: 992px) {
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        li {
+            margin-top: 0;
+            margin-bottom: 0;
+
+            &:not(:last-child) {
+                margin-right: 8px;
+            }
+
+            a {
+                font-family: "helveticaneuecyrroman";
+                color: #a0a0a0;
+                font-size: 12px;
+                text-decoration: underline;
+                text-align: left;
+
+                &:hover {
+                    color: #fd7100;
+                }
+            }
+        }
+    }
+
+    a {
+        font-family: "helveticaneuecyrroman";
+        color: #fff;
+        font-size: 14px;
+        text-decoration: underline;
+        text-align: left;
+    }
+
+    span {
+        color: #a0a0a0;
+        display: block;
+        font-family: "helveticaneuecyrroman";
+        font-size: 12px;
+        margin-bottom: 20px;
+        text-align: left;
+        @media(min-width: 768px) {
+            margin-bottom: 0;
+        }
+    }
 }
 
-.copy_content span {
-    text-align: left;
-}
-
-.copy_content ul li {
-    margin: 0 0.5em 0 0;
-}
-
-.copy_content span,
-.copy_content ul li a {
-    font-family: "helveticaneuecyrroman";
-    color: #a0a0a0;
-    font-size: 12px;
-}
-
-.copy_content ul li a:hover,
 .iconed_text_info a:hover {
     color: #fd7100;
-}
-
-.copy_content a,
-.copy_content ul li a {
-    text-decoration: underline;
-    text-align: left;
-}
-
-.copy_content a {
-    font-family: "helveticaneuecyrroman";
-    color: #fff;
-    font-size: 14px;
 }
 
 #searchbottom {

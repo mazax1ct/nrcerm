@@ -3,9 +3,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    @media(min-width: 1024px) {
-        padding-right: 20px;
-    }
 }
 
 .flex_blocks_item {
@@ -111,11 +108,4 @@
     position: absolute;
     bottom: 1em;
     left: 1em;
-}
-
-.flex_blocks.inside {
-    @media screen and (min-width: 1240px) {
-        margin-left: -6.8em;
-        left: 0.8em;
-    }
 }

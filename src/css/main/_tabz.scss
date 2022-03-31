@@ -1,7 +1,3 @@
-.tabz > ul li.r-tabs-state-active a {
-    color: #fd7100;
-}
-
 .tabz {
     margin: 2em 0;
 
@@ -75,6 +71,10 @@
                 &::after {
                     bottom: 0;
                     opacity: 1;
+                }
+
+                a {
+                    color: #fd7100;
                 }
             }
 
