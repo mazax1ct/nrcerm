@@ -3,9 +3,11 @@
     display: flex;
     flex-wrap: wrap;
     font-size: 12px;
+    line-height: 1.5;
     margin: 1em 0;
     @media(min-width: 1024px) {
         font-size: 14px;
+        line-height: 1.75;
         margin-top: 1.8em;
         margin-bottom: 1.8em;
         padding-left: 15px;

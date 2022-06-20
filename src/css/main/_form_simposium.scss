@@ -1,0 +1,36 @@
+#form_simposium {
+    margin: 0 0 30px;
+
+    .row {
+        margin: 0 0 10px;
+
+        input[type="text"] {
+            width: 100%;
+        }
+    }
+
+    .agree_note {
+        p {
+            font-size: 10px;
+        }
+    }
+
+    .fs_field_error {
+        border-color: #ff0000;
+    }
+
+    .form_content.form_sended {
+        padding: 25px;
+        background: #edffef;
+
+        p {
+            margin: 10px 0;
+
+            &:first-child {
+                margin: 0;
+                font-size: 22px;
+                color: #66cc5a;
+            }
+        }
+    }
+}

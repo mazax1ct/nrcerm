@@ -109,12 +109,15 @@ nav {
                     font-size: 0.75em;
                     line-height: 2;
                     max-height: 223px;
+                    max-width: 316px;
+                    width: 100%;
                     @media(min-width: 1200px) {
                         font-size: 0.95em;
                     }
 
                     li {
                         max-width: 316px;
+                        width: 100%;
 
                         a {
                             display: block;

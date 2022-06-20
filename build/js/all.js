@@ -315,33 +315,9 @@ function changeBlind(isBlind) {
         max: $.validator.format("Пожалуйста, введите число, меньшее или равное {0}."),
         min: $.validator.format("Пожалуйста, введите число, большее или равное {0}.")
     });
-    var swiper = new Swiper('.slider_wr_core', {
-        pagination: '.slider_wr_core_pagination',
-        paginationClickable: true,
-        paginationBulletRender: function(swiper, index, className) {
-            return '<span class="slider_wr_core_pagination_bullet ' + className + '"></span>';
-        }
-    });
 
     // новый слайдер
-    var upSlide = $("#dk-slide--up");
-    var downSlide = $("#dk-slide--down");
-
     var swiperNew = new Swiper('.slider_wr_core_new', {
-        on: {
-            init: function() {
-                var $slides = $('[data-slides]');
-                var images = $slides.data('slides');
-                var styles = {
-	        		backgroundImage: 'url("' + images[0] + '")'
-	        	};
-	            $slides.css(styles);
-                upSlide.css({backgroundImage: 'url("' + images[0] + '")'});
-                downSlide.css({backgroundImage: 'url("' + images[1] + '")'});
-                // $slides.css('background-image', 'url("' + images[0] + '")');
-                //console.log('swiper initialized');
-            },
-        },
         renderBullet: function(index, className) {
             return '<span data-index="' + index + '" class="slider_wr_core_pagination_bullet ' + className + '"></span>';
         },
@@ -354,50 +330,19 @@ function changeBlind(isBlind) {
         },
         speed: 750,
         effect: 'fade',
-          fadeEffect: {
-		    crossFade: true
-		  },
-    });
-    swiperNew.on('slideChange', function() {
-        var $slides = $('[data-slides]');
-        var images = $slides.data('slides');
-        var indexing = $(this).data('index');
-        var slideshow = function(indexing) {
-        	var styles = {
-        		backgroundImage: 'url("' + images[indexing] + '")'
-        	};
-            //console.log(indexing);
-            /* Этот блок отвечает за смену фона в слайдах */
-
-            if(upSlide.css('opacity') == 1) {
-				downSlide.css({backgroundImage: 'url("' + images[indexing] + '")'});
-                upSlide.animate({'opacity':0}, 750);
-                // upSlide.css({backgroundColor: '#ccc'});
-                //console.log("UP opacity = 1");
-                // если прозрачность верхнего слоя 1, то менять картинку надо на нижнем блоке
-                // и его анимировать прозрачность 1 - 0
-            } else {
-				upSlide.css({backgroundImage: 'url("' + images[indexing] + '")'});
-                upSlide.animate({'opacity':1}, 750);
-                //console.log("UP opacity = 0");
-                // или менять фон верхнего словя
-                // и его анимировать прозрачность 0 - 1
-            }
-
-            // $slides.css(styles)
-            // $slides.css('background-image', 'url("' + images[indexing] + '")')
-        };
-        slideshow(this.realIndex);
+        fadeEffect: {
+  		    crossFade: true
+  		  },
     });
     // новый слайдре
 
-    if (screen.width > 768 && $(window).width() > 768) {
+    /*if (screen.width > 768 && $(window).width() > 768) {
         $('.flex_blocks').masonry({
             itemSelector: '.flex_blocks_item',
             columnWidth: 290,
             gutter: 10
         });
-    }
+    }*/
     $('.aside_secondary_menu').children('li').children('div').click(function() {
         $(this).parent().toggleClass('expanded');
     });

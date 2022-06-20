@@ -1,4 +1,5 @@
 @import "main/_fonts.scss";
+@import "main/_reset.scss";
 @import "main/_base.scss";
 @import "main/_forms_buttons_selects.scss";
 @import "main/_sprite_icons_backgrounds.scss";
@@ -11,7 +12,7 @@
 @import "main/_tabz.scss";
 @import "main/_footer.scss";
 @import "main/_navigation_popup.scss"; //попап основного меню для мобил
-@import "main/_home_banner.scss";
+//@import "main/_home_banner.scss";
 @import "main/_home_category_list.scss";
 @import "main/_home_about.scss";
 @import "main/_home_doctors_list.scss";
@@ -27,4 +28,8 @@
 @import "main/_abc.scss";
 @import "main/_headered_horizontal.scss";
 @import "main/main.scss";
+@import "main/_poorVision.scss";
+@import "main/_form_simposium.scss";
+@import "main/_korrupciya_list.scss";
+@import "main/_poll-block.scss";
 @import "main/media-custom.scss";

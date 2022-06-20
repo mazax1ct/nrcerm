@@ -128,20 +128,40 @@ footer {
         margin: 0 0 15px !important;
 
         a {
-            .vk_big {
+            display: block;
+            height: 42px;
+            width: 43px;
+
+            .fb_big,
+            .instagram_big,
+            .twitter_big,
+            .vk_big,
+            .youtube_big {
                 display: none;
             }
 
-            .vk_big_tr {
+            .fb_big_tr,
+            .instagram_big_tr,
+            .twitter_big_tr,
+            .vk_big_tr,
+            .youtube_big_tr {
                 display: block;
             }
 
             &:hover {
-                .vk_big {
+                .fb_big,
+                .instagram_big,
+                .twitter_big,
+                .vk_big,
+                .youtube_big {
                     display: block;
                 }
 
-                .vk_big_tr {
+                .fb_big_tr,
+                .instagram_big_tr,
+                .twitter_big_tr,
+                .vk_big_tr,
+                .youtube_big_tr {
                     display: none;
                 }
             }

@@ -1,0 +1,57 @@
+.poll-block {
+    padding: 32px;
+    margin-bottom: 30px;
+    background: #f4f7fb;
+
+    &__question {
+        font-size: 18px;
+        font-weight: 700;
+        position: relative;
+        line-height: 26px;
+        margin-bottom: 20px;
+    }
+
+    &__result {
+        margin-bottom: 16px;
+    }
+
+    &__result-title {
+        margin-bottom: 6px;
+    }
+
+    &__result-info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__result-progress {
+        height: 10px;
+        width: 100%;
+        margin-right: 10px;
+        background: #fff;
+    }
+
+    &__result-progress-fill {
+        height: inherit;
+        background: #276cc3;
+    }
+
+    &__result-count {
+        display: flex;
+        flex: 0 0 auto;
+        white-space: nowrap;
+        min-width: 100px;
+        justify-content: flex-end;
+    }
+
+    &__result-count-percent {
+        font-weight: 700;
+        padding-right: 5px;
+    }
+
+    &__result-count-quantity {
+        min-width: 130px;
+        color: #848e99;
+    }
+}

@@ -1,23 +1,10 @@
-.header_slider {
-    background-repeat: no-repeat;
-    background-size: 100%;
-    min-height: 60px;
-    position: relative;
-    @media screen and (max-width: 767px) {
-        background-repeat: unset;
-        background-size: unset;
-    }
-}
-
 header {
     background: linear-gradient(90deg, #c0c4d0 0%, #e2e8f0 68%, #c1c8d0 100%);
+    min-height: 60px;
+    padding-top: 60px;
     width: 100%;
-
-    &.header_notmain {
-        height: 447px;
-        background-image: url("../img/not_main_hb.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
+    @media(min-width: 768px) {
+        padding-top: 0;
     }
 }
 
@@ -317,6 +304,19 @@ header {
             content: '';
             height: 16px;
             width: 16px;
+        }
+
+        &.black-white,
+        &.white-black {
+            background-color: #fff;
+            border: 2px solid #000;
+            border-left: none;
+        }
+
+        &.blue-yellow {
+            background-color: #00f;
+            border: 2px solid #000;
+            border-left: none;
         }
     }
 }
