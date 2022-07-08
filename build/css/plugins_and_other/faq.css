@@ -1,0 +1,114 @@
+.tabs__tab {
+  display: none;
+  opacity: 0
+}
+
+.tabs__tab.is-active {
+  display: block
+}
+
+.tabs__tab.is-visible {
+  opacity: 1
+}
+
+.tabs-nav {
+  margin-bottom: 30px;
+  text-align: center
+}
+
+.tabs-nav__list {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  overflow-x: auto;
+  max-width: 100%;
+  padding: 10px;
+  border-radius: 30px;
+  background-color: #edeff2;
+  scrollbar-width: thin;
+}
+
+.tabs-nav__list-item:not(:last-child) {
+  margin-right: 10px
+}
+
+.tabs-nav__button {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.25;
+  padding: 10px 15px;
+  cursor: pointer;
+  -webkit-transition: background-color .3s;
+  transition: background-color .3s;
+  white-space: nowrap;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  background-color: #185394
+}
+
+.tabs-nav__button.is-active {
+  background-color: #fd7100
+}
+
+.faq-item {
+  -webkit-transition: background-color .3s;
+  transition: background-color .3s;
+  border-radius: 8px;
+  background-color: #edeff2
+}
+
+.faq-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.faq-item.is-active .faq-item__toggler::after {
+  -webkit-transform: rotate(-180deg);
+  transform: rotate(-180deg)
+}
+
+.faq-item__toggler {
+  height: auto;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.5;
+  position: relative;
+  width: 100%;
+  padding: 15px 40px 15px 25px;
+  cursor: pointer;
+  text-align: left;
+  border: none;
+  background-color: transparent;
+  justify-content: flex-start;
+}
+
+.faq-item__toggler:hover {
+  box-shadow: none
+}
+
+.faq-item__toggler::after {
+  position: absolute;
+  z-index: 1;
+  top: 26px;
+  right: 16px;
+  left: auto;
+  width: 18px;
+  height: 11px;
+  content: "";
+  background-image: url("data:image/svg+xml,%3Csvg width='18' height='11' viewBox='0 0 18 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 0.999999L9 9L17 1' stroke='orange' stroke-width='1.83481'/%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-position: 0 0
+}
+
+.faq-item__body {
+  font-size: 15px;
+  line-height: 1.5;
+  display: none;
+  padding-right: 25px;
+  padding-bottom: 25px;
+  padding-left: 25px;
+}
+
+.faq-item__body p {
+  margin-bottom: 0
+}
