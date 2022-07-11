@@ -23,7 +23,7 @@
   overflow-x: auto;
   max-width: 100%;
   padding: 10px;
-  border-radius: 30px;
+  border-radius: 8px;
   background-color: #edeff2;
   scrollbar-width: thin;
 }
@@ -43,7 +43,7 @@
   white-space: nowrap;
   color: #fff;
   border: none;
-  border-radius: 30px;
+  border-radius: 8px;
   background-color: #185394
 }
 
