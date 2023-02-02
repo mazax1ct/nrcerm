@@ -46,124 +46,86 @@
             </ul>
 
             <div class="secondary_content">
-                <button class="js-aside-opener aside_opener button orangebutton" type="button">Открыть меню</button>
-                <aside class="aside_secondary">
-                    <div class="aside_secondary_h_block">
-                        <h2 class="aside_secondary_h">Отделения и центры</h2>
-                        <button class="js-aside-closer aside_secondary_closer" type="button" title="Закрыть меню"><span></span></button>
-                    </div>
-                    <ul class="aside_secondary_menu">
-                        <li>
-                            <a href="/departments-centers/novosti/">Новости</a>
-                            <div></div>
-                        </li>
-                        <li class="expanded">
-                            <a href="/departments-centers/specialists/">Специалисты</a>
-                            <div></div>
-                        </li>
-                        <li>
-                            <a href="/departments-centers/department/">Отделения</a>
-                            <div></div>
-                        </li>
-                        <li>
-                            <a href="/departments-centers/about-us/">О ВЦЭРМ им. А.М. Никифорова МЧС России </a>
-                            <ul>
-                                <li>
-                                    <a href="/departments-centers/about-us/history/" class="">История Центра</a>
-                                </li>
-                                <li>
-                                    <a href="/departments-centers/about-us/administration/" class="">Администрация Центра</a>
-                                </li>
-                                <li>
-                                    <a href="/departments-centers/about-us/licenziya/" class="">Лицензия</a>
-                                </li>
-                                <li>
-                                    <a href="/departments-centers/about-us/oms/" class="">Работа в системе ОМС</a>
-                                </li>
-                                <li>
-                                    <a href="/departments-centers/about-us/vmp/" class="">Высокотехнологичная медицинская помощь</a>
-                                </li>
-                                <li>
-                                    <a href="/departments-centers/about-us/pmu/" class="">Оказание платных медицинских услуг</a>
-                                </li>
-                                <li>
-                                    <a href="/departments-centers/about-us/meropriyatiya-soyuznogo-gosudarstva/" class="">Мероприятия Союзного государства</a>
-                                </li>
-                                <li>
-                                    <a href="/departments-centers/about-us/medicinskaya-pomow-inostrannym-grazhdanam/" class="">Медицинская помощь иностранным гражданам</a>
-                                </li>
-                                <li>
-                                    <a href="/departments-centers/about-us/finansovo-hozyajstvennaya-deyatelnost/" class="">Финансово-хозяйственная деятельность</a>
-                                </li>
-                                <li>
-                                    <a href="/departments-centers/about-us/specialnaya-ocenka-uslovij-truda/" class="">Специальная оценка условий труда</a>
-                                </li>
-                                <li>
-                                    <a href="/departments-centers/about-us/god-grazhdanskoj-oborony-v-mchs-rossii-2017/" class="">Год гражданской обороны в МЧС России 2017</a>
-                                </li>
-                                <li>
-                                    <a href="/departments-centers/about-us/vacancies/" class="">Вакансии</a>
-                                </li>
-                            </ul>
-                            <div></div>
-                        </li>
-                        <li>
-                            <a href="/departments-centers/contacts/">Контакты</a>
-                            <div></div>
-                        </li>
-                    </ul>
-                    <div class="ekran-big">
-                        <div class="be_pacient_online">
-                            <div class="be_pacient_online_h">Записаться на прием</div>
-                            <a class="button orangebutton popup-with-form" href="#test-form">Записаться</a>
 
-                            <form method="post" action="/webforms/addnew/" class="white-popup-block mfp-hide" id="test-form" enctype="multipart/form-data" novalidate="novalidate">
-                                <h2>Записаться на прием</h2>
-                                <input type="hidden" name="system_email_to" value="909">
-                                <div class=""></div>
-                                <div class="">
-                                    <input type="text" name="data[new][predstavtes_pozhalujsta]" id="formfield_predstavtes_pozhalujsta" placeholder="Представьтесь, пожалуйста" value="">
-                                </div>
-                                <div class="important">
-                                    <input type="text" name="data[new][telefon]" id="formfield_telefon" placeholder="Телефон" required="" value="">
-                                </div>
-                                <div class="">
-                                    <input type="text" name="data[new][email]" id="formfield_email" placeholder="Email" value="">
-                                </div>
-                                <div class="">
-                                    <textarea name="data[new][kommentar]" placeholder="Ваш вопрос"></textarea>
-                                </div>
-                                <div class="hide">
-                                    <input type="text" name="data[new][url_zapisi]" id="formfield_url_zapisi" placeholder="url" value="/patient-guide/diseases/">
-                                </div>
-                                <input type="hidden" name="system_form_id" value="135">
-                                <input type="hidden" name="ref_onsuccess" value="">
-                                <div class="personal_data_wrapper hide">
-                                    <input id="personal-data-notes" type="checkbox" name="data[new][personal-data-notes]">
-                                    <label for="personal-data-notes">
-                                        Ознакомлен с положением <a href="/usloviya-ispolzovaniya/">о данных</a>
-                                    </label>
-                                </div>
-                                <div class="personal_data_wrapper">
-                                    <input id="common-152-federal-law" type="checkbox" name="personal" required="">
-                                    <label for="common-152-federal-law">
-                                        Ознакомлен с положением <a href="/privacy/">о конфиденциальности</a>
-                                    </label>
-                                </div>
-                                <input type="submit" class="orangebutton" value="Отправить">
-                            </form>
-                        </div>
-                    </div>
-                </aside>
                 <section>
                     <article>
                         <h1 umi:element-id="9" umi:field-name="h1">Специалисты ВЦЭРМ</h1>
-                        <div class="abc_block">
+
+                        <!--<div class="abc_block">
                             <a class="abc_block_item abc_block_item_current" data-path="otdelenie" data-tag="all" href="https://nrcerm.ru/departments-centers/specialists/">все</a>
                             <a class="abc_block_item" data-path="otdelenie" data-tag="2539" href="?otdelenie=2539">Клиника № 1</a>
                             <a class="abc_block_item" data-path="otdelenie" data-tag="2540" href="?otdelenie=2540">Клиника № 2</a>
                             <a class="abc_block_item" data-path="otdelenie" data-tag="2541" href="?otdelenie=2541">Поликлиника</a>
                             <a class="abc_block_item" data-path="otdelenie" data-tag="49615" href="?otdelenie=49615">49614</a>
+                        </div>-->
+
+                        <div class="doctors-filter">
+                            <div class="doctors-filter__item">
+                                <div class="doctors-search">
+                                    <div class="doctors-search__input-container">
+                                        <button class="doctors-search__submit" type="submit" title="Найти"></button>
+                                        <input class="doctors-search__input" type="text" placeholder="ФИО">
+                                        <button class="doctors-search__reset" type="reset" title="Сбросить"></button>
+                                    </div>
+
+                                    <div class="doctors-search__dropdown" style="display:none">
+                                        <button class="doctors-search__dropdown-item" type="button">Фамилия Имя Отчество</button>
+                                        <button class="doctors-search__dropdown-item" type="button">Фамилия Имя Отчество</button>
+                                        <button class="doctors-search__dropdown-item" type="button">Фамилия Имя Отчество</button>
+                                        <button class="doctors-search__dropdown-item" type="button">Фамилия Имя Отчество</button>
+                                        <button class="doctors-search__dropdown-item" type="button">Фамилия Имя Отчество</button>
+                                        <button class="doctors-search__dropdown-item" type="button">Фамилия Имя Отчество</button>
+                                        <button class="doctors-search__dropdown-item" type="button">Фамилия Имя Отчество</button>
+                                        <button class="doctors-search__dropdown-item" type="button">Фамилия Имя Отчество</button>
+                                        <button class="doctors-search__dropdown-item" type="button">Фамилия Имя Отчество</button>
+                                        <button class="doctors-search__dropdown-item" type="button">Фамилия Имя Отчество</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="doctors-filter__item">
+                                <select>
+                                    <option value="0">Выберите спецальность</option>
+                                    <option value="1">Уролог</option>
+                                    <option value="2">Хирург</option>
+                                    <option value="3">ЛОР</option>
+                                    <option value="4">Аллерголог</option>
+                                </select>
+                            </div>
+
+                            <div class="doctors-filter__item">
+                                <select>
+                                    <option value="0">Выберите клинику</option>
+                                    <option value="1">Клиника 1</option>
+                                    <option value="2">Клиника 2</option>
+                                    <option value="3">Клиника 3</option>
+                                    <option value="4">Клиника 4</option>
+                                </select>
+                            </div>
+
+                            <div class="doctors-filter__item">
+                                <select>
+                                    <option value="0">Выберите отделение</option>
+                                    <option value="1">Урологическое отделение</option>
+                                    <option value="2">Отдел Ядерной Медицины</option>
+                                    <option value="3">Отделение экстренной хирургии</option>
+                                    <option value="4">Отделение гравитационной хирургии крови</option>
+                                    <option value="5">Офтальмологическое отделение</option>
+                                    <option value="6">Ожоговое отделение с пластической хирургией</option>
+                                    <option value="7">Клинической неврологии отдел</option>
+                                    <option value="8">Научно-исследовательская лаборатория элементного анализа</option>
+                                    <option value="9">Отделение нейрохирургии</option>
+                                    <option value="10">Научно-исследовательская лаборатория спектрометрии излучений человека</option>
+                                    <option value="11">Отделение ультразвуковой диагностики</option>
+                                    <option value="12">Отдел Медицинской Реабилитации</option>
+                                    <option value="13">Отдел терапии и профпаталогии</option>
+                                </select>
+                            </div>
+
+                            <div class="doctors-filter__item doctors-filter__buttons">
+                                <button type="submit">Применить</button>
+                                <button class="orangebutton" type="reset">Сбросить</button>
+                            </div>
                         </div>
 
                         <div class="abc_block">
@@ -198,7 +160,7 @@
                             <a class="abc_block_item abc_block_item_empty" data-path="alpha" data-tag="я" href="">я</a>
                         </div>
 
-                        <div class="abc_list" data-title="а" id="а">
+                        <div class="abc_list abc_list--cards" data-title="а" id="а">
                             <div class="abc_list_item">
                                 <div>
                                     <img class="img-responsive" src="https://nrcerm.ru/images/cms/thumbs/a5b0aeaa3fa7d6e58d75710c18673bd7ec6d5f6d/ass_100_auto_png_5_80.png" alt="" umi:element-id="141" umi:field-name="izobrazhenie" width="100"
@@ -290,7 +252,7 @@
                             </div>
 
                         </div>
-                        <div class="abc_list" data-title="б" id="б">
+                        <div class="abc_list abc_list--cards" data-title="б" id="б">
                             <div class="abc_list_item">
                                 <div>
                                     <img class="img-responsive" src="https://nrcerm.ru/images/cms/thumbs/a5b0aeaa3fa7d6e58d75710c18673bd7ec6d5f6d/balashova_100_auto_jpg_5_80.jpg" alt="" umi:element-id="12828" umi:field-name="izobrazhenie" width="100"
@@ -491,7 +453,7 @@
                             </div>
 
                         </div>
-                        <div class="abc_list" data-title="в" id="в">
+                        <div class="abc_list abc_list--cards" data-title="в" id="в">
                             <div class="abc_list_item">
                                 <div>
 
@@ -637,7 +599,7 @@
                             </div>
 
                         </div>
-                        <div class="abc_list" data-title="г" id="г">
+                        <div class="abc_list abc_list--cards" data-title="г" id="г">
                             <div class="abc_list_item">
                                 <div>
 
@@ -831,7 +793,7 @@
                             </div>
 
                         </div>
-                        <div class="abc_list" data-title="д" id="д">
+                        <div class="abc_list abc_list--cards" data-title="д" id="д">
                             <div class="abc_list_item">
                                 <div>
 
@@ -986,7 +948,7 @@
                             </div>
 
                         </div>
-                        <div class="abc_list" data-title="е" id="е">
+                        <div class="abc_list abc_list--cards" data-title="е" id="е">
                             <div class="abc_list_item">
                                 <div>
 
@@ -1024,7 +986,7 @@
                             </div>
 
                         </div>
-                        <div class="abc_list" data-title="ж" id="ж">
+                        <div class="abc_list abc_list--cards" data-title="ж" id="ж">
                             <div class="abc_list_item">
                                 <div>
 
@@ -1050,7 +1012,7 @@
                             </div>
 
                         </div>
-                        <div class="abc_list" data-title="з" id="з">
+                        <div class="abc_list abc_list--cards" data-title="з" id="з">
                             <div class="abc_list_item">
                                 <div>
 
@@ -1099,7 +1061,7 @@
                             </div>
 
                         </div>
-                        <div class="abc_list" data-title="и" id="и">
+                        <div class="abc_list abc_list--cards" data-title="и" id="и">
                             <div class="abc_list_item">
                                 <div>
 
@@ -1124,7 +1086,7 @@
                             </div>
 
                         </div>
-                        <div class="abc_list" data-title="к" id="к">
+                        <div class="abc_list abc_list--cards" data-title="к" id="к">
                             <div class="abc_list_item">
                                 <div>
 
@@ -1557,7 +1519,7 @@
                             </div>
 
                         </div>
-                        <div class="abc_list" data-title="л" id="л">
+                        <div class="abc_list abc_list--cards" data-title="л" id="л">
                             <div class="abc_list_item">
                                 <div>
 
@@ -1690,7 +1652,7 @@
                             </div>
 
                         </div>
-                        <div class="abc_list" data-title="м" id="м">
+                        <div class="abc_list abc_list--cards" data-title="м" id="м">
                             <div class="abc_list_item">
                                 <div>
 
@@ -1858,7 +1820,7 @@
                             </div>
 
                         </div>
-                        <div class="abc_list" data-title="н" id="н">
+                        <div class="abc_list abc_list--cards" data-title="н" id="н">
                             <div class="abc_list_item">
                                 <div>
 
@@ -1955,7 +1917,7 @@
                             </div>
 
                         </div>
-                        <div class="abc_list" data-title="о" id="о">
+                        <div class="abc_list abc_list--cards" data-title="о" id="о">
                             <div class="abc_list_item">
                                 <div>
 
@@ -1981,7 +1943,7 @@
                             </div>
 
                         </div>
-                        <div class="abc_list" data-title="п" id="п">
+                        <div class="abc_list abc_list--cards" data-title="п" id="п">
                             <div class="abc_list_item">
                                 <div>
 
@@ -2198,7 +2160,7 @@
                             </div>
 
                         </div>
-                        <div class="abc_list" data-title="р" id="р">
+                        <div class="abc_list abc_list--cards" data-title="р" id="р">
                             <div class="abc_list_item">
                                 <div>
 
@@ -2271,7 +2233,7 @@
                             </div>
 
                         </div>
-                        <div class="abc_list" data-title="с" id="с">
+                        <div class="abc_list abc_list--cards" data-title="с" id="с">
                             <div class="abc_list_item">
                                 <div>
 
@@ -2500,7 +2462,7 @@
                             </div>
 
                         </div>
-                        <div class="abc_list" data-title="т" id="т">
+                        <div class="abc_list abc_list--cards" data-title="т" id="т">
                             <div class="abc_list_item">
                                 <div>
 
@@ -2586,7 +2548,7 @@
                             </div>
 
                         </div>
-                        <div class="abc_list" data-title="у" id="у">
+                        <div class="abc_list abc_list--cards" data-title="у" id="у">
                             <div class="abc_list_item">
                                 <div>
 
@@ -2600,7 +2562,7 @@
                             </div>
 
                         </div>
-                        <div class="abc_list" data-title="ф" id="ф">
+                        <div class="abc_list abc_list--cards" data-title="ф" id="ф">
                             <div class="abc_list_item">
                                 <div>
 
@@ -2614,7 +2576,7 @@
                             </div>
 
                         </div>
-                        <div class="abc_list" data-title="х" id="х">
+                        <div class="abc_list abc_list--cards" data-title="х" id="х">
                             <div class="abc_list_item">
                                 <div>
 
@@ -2724,7 +2686,7 @@
                             </div>
 
                         </div>
-                        <div class="abc_list" data-title="ц" id="ц">
+                        <div class="abc_list abc_list--cards" data-title="ц" id="ц">
                             <div class="abc_list_item">
                                 <div>
 
@@ -2738,7 +2700,7 @@
                             </div>
 
                         </div>
-                        <div class="abc_list" data-title="ч" id="ч">
+                        <div class="abc_list abc_list--cards" data-title="ч" id="ч">
                             <div class="abc_list_item">
                                 <div>
 
@@ -2831,7 +2793,7 @@
                             </div>
 
                         </div>
-                        <div class="abc_list" data-title="ш" id="ш">
+                        <div class="abc_list abc_list--cards" data-title="ш" id="ш">
                             <div class="abc_list_item">
                                 <div>
                                     <img class="img-responsive" src="https://nrcerm.ru/images/cms/thumbs/a5b0aeaa3fa7d6e58d75710c18673bd7ec6d5f6d/shalaeva_100_auto_png_5_80.png" alt="" umi:element-id="13099" umi:field-name="izobrazhenie" width="100"
@@ -2940,7 +2902,7 @@
                             </div>
 
                         </div>
-                        <div class="abc_list" data-title="э" id="э">
+                        <div class="abc_list abc_list--cards" data-title="э" id="э">
                             <div class="abc_list_item">
                                 <div>
 
@@ -2954,7 +2916,7 @@
                             </div>
 
                         </div>
-                        <div class="abc_list" data-title="ю" id="ю">
+                        <div class="abc_list abc_list--cards" data-title="ю" id="ю">
                             <div class="abc_list_item">
                                 <div>
 

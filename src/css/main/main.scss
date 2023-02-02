@@ -60,14 +60,22 @@
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: flex-start;
-    margin: 2em 0;
+    margin: 2em -0.5em;
+
+    .image_gallery_item {
+        margin: 0 0 1.2em;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
 }
 
 .image_gallery_item {
-    margin: 0 0 1.2em;
-
-    &:hover {
-        opacity: 0.8;
+    &::before {
+        display: none;
     }
 }
 
@@ -144,8 +152,6 @@ article p.caption_p {
     background-color: #edeff2;
     padding: 2em 3em;
     color: #185394;
-    padding: 1em 1.5em;
-    color: #323232;
     font-size: 1em;
     width: 100%;
     margin: 0 0 3.5em;
@@ -482,7 +488,6 @@ article {
     line-height: 20px;
 }
 /***************************/
-
 .feedback_form h3 {
     text-align: left;
     color: rgb(0, 0, 0);

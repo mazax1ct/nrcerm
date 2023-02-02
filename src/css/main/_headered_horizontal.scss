@@ -10,7 +10,7 @@
         align-items: flex-start;
     }
 
-    span {
+    & > span {
         color: #323232;
         display: block;
         font-family: "museo_sans_cyrl500";
@@ -21,7 +21,9 @@
             min-width: 140px;
             width: 140px;
         }
+    }
 
+    span {
         span {
             color: #94a0b2;
             display: block;
@@ -48,8 +50,11 @@
 
     article {
         flex-grow: 1;
-        @media(min-width: 768px) {
-            padding-left: 20px;
+
+        &:not(:first-child) {
+            @media(min-width: 768px) {
+                padding-left: 20px;
+            }
         }
 
         p {

@@ -73,10 +73,13 @@
 
     & > section {
         flex-grow: 1;
-        @media(min-width: 1024px) {
-            max-width: calc(1200px - 290px);
-            padding-left: 20px;
-        }
+    }
+}
+
+.secondary_content .aside_secondary + section {
+    @media(min-width: 1024px) {
+        max-width: calc(1200px - 290px);
+        padding-left: 20px;
     }
 }
 
