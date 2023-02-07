@@ -12,6 +12,20 @@
     @media(min-width: 768px) {
         display: none !important;
     }
+
+    .selectwrap {
+        margin: 10px;
+
+        select {
+            font-family: Arial, sans-serif;
+            font-weight: 400;
+
+            option {
+                font-family: Arial, sans-serif;
+                font-weight: 400;
+            }
+        }
+    }
 }
 
 .navigation_header {
