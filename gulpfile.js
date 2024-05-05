@@ -19,7 +19,7 @@ var path = {
     html: "build/",
     js: "build/js/",
     css: "build/css/",
-    plugins_css: "build/plugins_css/",
+    add_css: "build/add_css/",
     img: "build/images/",
     fonts: "build/fonts/"
   },
@@ -27,7 +27,7 @@ var path = {
     html: "src/*.html",
     js: "src/js/**/*.js",
     style: "src/css/*.*",
-    plugins_style: "src/plugins_css/*.*",
+    add_css: "src/add_css/*.*",
     img: "src/images/**/*.*",
     fonts: "src/fonts/**/*.*"
   },
@@ -35,7 +35,7 @@ var path = {
     html: "src/**/*.html",
     js: "src/js/**/*.js",
     style: "src/css/**/*.*",
-    plugins_style: "src/plugins_css/*.*",
+    add_css: "src/add_css/*.*",
     img: "src/images/**/*.*",
     fonts: "src/fonts/**/*.*"
   },
@@ -92,10 +92,10 @@ gulp.task("style:build", function() {
     .pipe(reload({ stream: true }));
 });
 
-gulp.task("plugins_style:build", function() {
+gulp.task("add_css:build", function() {
   gulp
-    .src(path.src.plugins_style)
-    .pipe(gulp.dest(path.build.plugins_css))
+    .src(path.src.add_css)
+    .pipe(gulp.dest(path.build.add_css))
     .pipe(reload({ stream: true }));
 });
 
@@ -113,7 +113,7 @@ gulp.task("fonts:build", function() {
 gulp.task("build", [
   "html:build",
   "style:build",
-  "plugins_style:build",
+  "add_css:build",
   "js:build",
   "image:build",
   "fonts:build"
@@ -126,8 +126,8 @@ gulp.task("watch", function() {
   watch([path.watch.style], function(event, cb) {
     gulp.start("style:build");
   });
-  watch([path.watch.plugins_style], function(event, cb) {
-    gulp.start("plugins_style:build");
+  watch([path.watch.add_css], function(event, cb) {
+    gulp.start("add_css:build");
   });
   watch([path.watch.js], function(event, cb) {
     gulp.start("js:build");

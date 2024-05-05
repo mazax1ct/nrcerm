@@ -1,0 +1,25 @@
+.spec-detail h1 {
+  margin-top: 0;
+}
+
+.spec-detail__image img {
+  border-radius: 12px;
+  display: block;
+  width: 100%
+}
+
+@media(min-width: 768px) {
+  .spec-detail__top {
+    display: flex;
+    gap: 20px;
+  }
+
+  .spec-detail__image {
+    min-width: 300px;
+    width: 300px
+  }
+
+  .spec-detail__info-block {
+    width: calc(100% - 320px);
+  }
+}
